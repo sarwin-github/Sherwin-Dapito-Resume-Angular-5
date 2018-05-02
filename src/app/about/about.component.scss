@@ -1,0 +1,34 @@
+.bg-img{ 
+    opacity: 0.9;
+}
+
+.social{
+    color: #263238 !important;
+    font-weight: 500px !important;
+}
+
+.bg-img {
+    background-image: url("assets/images/background1.png");
+    position: relative;
+}
+
+.bg-img:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+p{
+    font-size: 13px !important;
+}
+
+.profile-picture{
+    width: 150px;
+}
+
+.more{
+    font-size: 13px !important;
+    color: #263238;
+}
