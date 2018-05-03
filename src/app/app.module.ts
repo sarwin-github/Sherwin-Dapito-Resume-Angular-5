@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { HomeRoutingModule } from './home/home.routing.module';
+import { SharedModule } from './shared/shared.module';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
@@ -15,7 +16,8 @@ import { FooterComponent } from './shared/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

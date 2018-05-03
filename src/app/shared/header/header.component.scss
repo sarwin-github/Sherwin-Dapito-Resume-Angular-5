@@ -1,12 +1,22 @@
 .nav-link{
-  color: whitesmoke !important;
-  font-size: 12px !important;
-  text-transform: uppercase !important;
-  font-weight: 500 !important;
-  font-family: Verdana;
+	color: whitesmoke !important;
+	font-size: 11px !important;
+	text-transform: uppercase !important;
+	font-weight: 500 !important;
+	font-family: Verdana;
+	letter-spacing: 2px !important;
+}
+
+.nav-link:hover{
+	color: red !important;
+	border-bottom: solid 1px red;
 }
 
 .navbar-brand{
-  color: whitesmoke !important;
+	color: whitesmoke !important;
+}
+
+.navbar{
+	border-bottom: solid 1px red;
 }
 

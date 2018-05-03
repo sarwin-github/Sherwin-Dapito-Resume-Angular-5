@@ -8,7 +8,7 @@
 }
 
 .bg-img {
-    background-image: url("assets/images/background1.png");
+    background-image: url(/assets/images/background2.jpg);
     position: relative;
 }
 
@@ -31,4 +31,8 @@ p{
 .more{
     font-size: 13px !important;
     color: #263238;
+}
+
+.name{
+    font-family: Gabriola !important;
 }
