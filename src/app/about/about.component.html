@@ -2,22 +2,23 @@
 <div class="container">
 	<div class="row">
 		<!--The content below is only a placeholder and can be replaced.-->
-		<div class="col-md-12 py-5 px-5">
-			<div class="card">
+		<div class="col-md-12 py-md-5 px-md-5">
+			<div class="shadow-sm">
 				<div class="row">
-					<div class="col-md-3 bg-img">
+					<div class="card col-md-3 bg-img d-none d-md-block d-lg-block">
 						<div class="px-5 text-danger py-5 my-5">
 							
 						</div>
 					</div>
-					<div class="col-md-9 py-5 px-5" [@fadeIn]>
-						<div class="pull-right text-gray-dark pull-right">
-							<a routerLink="/contact-us" class="more">More About me<span class="pl-3 fa fa-arrow-right"></span></a>
+
+					<div class="card col-md-9 py-5 px-5">
+						<div class="text-right text-gray-dark pull-right" [@fadeIn]>
+							<a routerLink="/experiences" class="more">More About Me<span class="pl-3 fa fa-arrow-right"></span></a>
 						</div>
 						
-						<div class="px-5 my-5">
+						<div class="px-md-5 mt-5" [@fadeIn]>
 							<div class="text-center">
-								<img src="/assets/images/profile-sarwin.png" class="img img-fluid rounded-circle profile-picture" alt="Sherwin Dapito"><br><br>
+								<img src="/assets/images/profile-sarwin.png" class="img img-fluid rounded-circle profile-picture shadow-sm" alt="Sherwin Dapito"><br><br>
 								<hr style="width: 50px;"><br>
 								<h2 class="text-danger name">Sherwin Dapito</h2>
 								<h6>Web Developer, Computer Engineer</h6>
@@ -33,10 +34,16 @@
 								<a class="social px-2" href=""><i class="fa fa-instagram"></i></a>
 							</div><br><br>
 
-							<div class="text-center">
-								<button class="btn btn-sm btn-danger px-4" style="border-radius: 0px;">Hire me now</button>
+							<div class="text-center d-none d-md-block d-lg-block">
+								<a routerLink="/contact-me" class="btn btn-sm btn-danger px-4" style="border-radius: 0px;">Hire me now</a>
 								<button class="btn btn-sm btn-dark px-4" style="border-radius: 0px;">Check my portfolio</button>
 							</div>
+							
+						</div>
+					</div>
+
+					<div class="col-md-3 bg-img d-none d-sm-block d-block d-md-none d-lg-none">
+						<div class="px-5 text-danger py-5 my-5">
 							
 						</div>
 					</div>

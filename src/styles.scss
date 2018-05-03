@@ -11,3 +11,20 @@ a{
 * {
     font-family: Ubuntu;
   }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: gray !important;
+  font-size: 13px !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: gray !important;
+  font-size: 13px !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: gray !important;
+  font-size: 13px !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: gray !important;
+  font-size: 13px !important;
+}
