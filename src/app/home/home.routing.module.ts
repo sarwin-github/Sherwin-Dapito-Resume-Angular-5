@@ -5,12 +5,14 @@ import { HomeComponent } from './home.component';
 import { AboutComponent } from '../about/about.component';
 import { AboutExperienceComponent } from '../about-experience/about-experience.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
+import { PortfolioComponent } from '../portfolio/portfolio.component';
 
 const homeRoute: Routes = [
   	{ path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'experiences', component: AboutExperienceComponent },
     { path: 'contact-me', component: ContactUsComponent },
+    { path: 'portfolio', component: PortfolioComponent },
 ];
 
 @NgModule({
@@ -23,6 +25,7 @@ const homeRoute: Routes = [
     AboutExperienceComponent,
     ContactUsComponent,
     HomeComponent,
+    PortfolioComponent
   ]
 })
 

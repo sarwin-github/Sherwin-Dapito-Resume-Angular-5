@@ -25,18 +25,43 @@ p{
 }
 
 .profile-picture{
-    width: 100px;
+    width: 150px;
 }
 
 .more{
-    font-size: 13px !important;
-    color: #263238;
+    cursor: pointer;
+}
+
+.more:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .name{
     font-family: Gabriola !important;
 }
 
+.dd-2{
+    font-size: 13px !important;
+}
+
+dd{
+   font-size: 12px !important; 
+}
+
+
+
+@media (min-width: 992px) {
+    .right{
+        border-left: 1px #bdbdbd solid !important;
+    }
+}
+@media (min-width: 1200px) {
+    .right{
+        border-left: 1px #bdbdbd solid !important;
+    }
+}
+
 .card{
-    border-radius: 0px !important;
+    border-radius: 0px;
 }
