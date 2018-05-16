@@ -16,9 +16,9 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) onWindowScroll(e) {
     const number = e.target.documentElement.scrollTop;
-    if (number > 200) {
+    if (number > 80) {
       this.fixed = true;
-    } else if (this.fixed && number < 100) {
+    } else if (this.fixed && number < 70) {
       this.fixed = false;
     }
   }
