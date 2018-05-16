@@ -1,23 +1,24 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { fadeIn } from '../../animations/fade-in';
 
 @Component({
   selector: 'layout-header',
+  animations: [fadeIn],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  fixed: boolean;
+  fixed: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
 
-  @HostListener('window:scroll', ['$event']) onWindowScroll($event) {
-    const number = $event.target.scrollTop;
-
-    if (number > 40) {
+  @HostListener('window:scroll', ['$event']) onWindowScroll(e) {
+    const number = e.target.documentElement.scrollTop;
+    if (number > 200) {
       this.fixed = true;
-    } else if (this.fixed && number < 10) {
+    } else if (this.fixed && number < 100) {
       this.fixed = false;
     }
   }
