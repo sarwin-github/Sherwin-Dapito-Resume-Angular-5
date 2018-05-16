@@ -1,0 +1,67 @@
+.bg-img{ 
+    opacity: 0.9;
+}
+
+.social{
+    color: #263238 !important;
+    font-weight: 500px !important;
+}
+
+.bg-img {
+    background-image: url(/assets/images/background2.jpg);
+    position: relative;
+}
+
+.bg-img:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+p{
+    font-size: 13px !important;
+}
+
+.profile-picture{
+    width: 150px;
+}
+
+.more{
+    cursor: pointer;
+}
+
+.more:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.name{
+    font-family: Gabriola !important;
+}
+
+.dd-2{
+    font-size: 13px !important;
+}
+
+dd{
+   font-size: 12px !important; 
+}
+
+
+
+@media (min-width: 992px) {
+    .right{
+        border-left: 1px #bdbdbd solid !important;
+    }
+}
+@media (min-width: 1200px) {
+    .right{
+        border-left: 1px #bdbdbd solid !important;
+    }
+}
+
+.card{
+    border-radius: 0px;
+}

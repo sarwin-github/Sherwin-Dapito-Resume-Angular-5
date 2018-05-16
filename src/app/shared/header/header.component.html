@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" (scroll)="onWindowScroll($event)">
 		<button class="navbar-toggler mt-2" type="button" data-toggle="collapse" data-target="#navCollapseContent" aria-controls="navCollapseContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  	</button>
@@ -6,6 +6,9 @@
 
 	  	<div class="navbar-collapse collapse"  id="navCollapseContent">
 	  		<ul class="navbar-nav mx-auto">
+	  			<li class="nav-item d-md-none d-lg-none d-none d-sm-block d-block social-min">
+	  				<hr>
+	  			</li>
 	  			<li class="nav-item mx-2">
 	  				<a class="nav-link" routerLink="/">Home</a> 
 	  			</li>
@@ -16,13 +19,16 @@
 	  				<a class="nav-link" routerLink="/portfolio">Portfolio</a> 
 	  			</li>
 	  			<li class="nav-item mx-2">
+	  				<a class="nav-link" routerLink="/skills">Skills</a> 
+	  			</li>
+	  			<li class="nav-item mx-2">
 	  				<a class="nav-link" routerLink="/contact-me">Contact Me</a> 
 	  			</li>
 	  			<li class="nav-item d-none d-md-block d-lg-block mx-2">
 	  				<a class="nav-link">|</a> 
 	  			</li>
 	  			<li class="nav-item d-none d-md-block d-lg-block">
-	  				<a class="social nav-link" href=""><i class="fa fa-facebook"></i></a>
+	  				<a class="social nav-link" href="https://www.facebook.com/sherwin.dapito" target="_blank"><i class="fa fa-facebook"></i></a>
 	  			</li>
 	  			<li class="nav-item d-none d-md-block d-lg-block">
 	  				<a class="social nav-link" href=""><i class="fa fa-twitter"></i></a>
@@ -34,12 +40,12 @@
 	  				<a class="social nav-link" href=""><i class="fa fa-instagram"></i></a>
 	  			</li>
 
-	  			<li class="nav-item d-md-none d-lg-none d-none d-sm-block d-block">
+	  			<li class="nav-item d-md-none d-lg-none d-none d-sm-block d-block social-min">
 	  				<hr>
-	  				<a class="social-min" href=""><i class="fa fa-facebook"></i></a>
-	  				<a class="social-min" href=""><i class="fa fa-twitter"></i></a>
-	  				<a class="social-min" href=""><i class="fa fa-google"></i></a>
-	  				<a class="social-min" href=""><i class="fa fa-instagram"></i></a>
+	  				<a href="https://www.facebook.com/sherwin.dapito" target="_blank"><i class="fa fa-facebook"></i></a>
+	  				<a href=""><i class="fa fa-twitter"></i></a>
+	  				<a href=""><i class="fa fa-google"></i></a>
+	  				<a href=""><i class="fa fa-instagram"></i></a>
 	  			</li>
 	  		</ul>
 	  	</div>
