@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" [ngClass]="fixed ? 'fixed-top': ''" (scroll)="onWindowScroll($event)">
-		<button class="navbar-toggler mt-2" type="button" data-toggle="collapse" data-target="#navCollapseContent" aria-controls="navCollapseContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  	</button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ml-auto" [ngClass]="fixed ? 'fixed-top': ''" (scroll)="onWindowScroll($event)">
+
+	    <span class="navbar-toggler navbar-toggler-icon" data-toggle="collapse" data-target="#navCollapseContent" aria-controls="navCollapseContent" aria-expanded="false" aria-label="Toggle navigation"></span>
+	
 	  	<a class="navbar-brand d-md-none d-lg-none d-none d-sm-block d-block" href="#"></a>
 
 	  	<div class="navbar-collapse collapse"  id="navCollapseContent">
@@ -51,4 +51,4 @@
 	  	</div>
 </nav>
 
-<div class="mt-5" [ngClass]="fixed ? 'd-block': 'd-none'"><br><br><br><br><br><br></div>
+<div class="mt-5" [ngClass]="fixed ? 'd-block': 'd-none'"><br><br></div>
