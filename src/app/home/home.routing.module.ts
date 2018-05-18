@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from '../about/about.component';
 import { AboutExperienceComponent } from '../about-experience/about-experience.component';
@@ -19,6 +20,8 @@ const homeRoute: Routes = [
 
 @NgModule({
   imports: [
+    BrowserModule,
+    CommonModule,
   	RouterModule.forRoot(homeRoute)
   ],
   exports: [RouterModule],
