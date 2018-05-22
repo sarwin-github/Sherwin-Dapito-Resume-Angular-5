@@ -1,3 +1,6 @@
 .text-main{
     color: #a7ffeb  ;
 }
+
+.progress {height: 25px;} // we increased it so the text is visible or change font size
+.progress .sr-only { position: relative; }

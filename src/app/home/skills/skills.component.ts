@@ -9,6 +9,7 @@ import { fadeIn } from '../../animations/fade-in';
 export class SkillsComponent implements OnInit {
 	data: any;
 	options: any;
+	optionSmall: any;
 
 	constructor() { 
 		this.data = {
@@ -29,7 +30,7 @@ export class SkillsComponent implements OnInit {
 	                "#E7E9ED",
 	                "#36A2EB"
 	            ],
-	            label: 'My dataset'
+	            label: 'Web Technology and Framework'
 	        }],
 	        labels: [
 	            "JavaScript",
@@ -52,6 +53,21 @@ export class SkillsComponent implements OnInit {
                position: 'right',
            	},
        	};
+
+       	this.optionSmall = {
+       		title: {
+               display: true,
+               text: '',
+               fontSize: 16,
+               fontColor: 'white'
+           	},
+           	legend: {
+
+               position: 'top',
+           	},
+           	responsive: true,
+           	maintainAspectRatio: false
+       	}
 	}
 
 	ngOnInit() {
