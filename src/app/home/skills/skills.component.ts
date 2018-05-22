@@ -15,11 +15,10 @@ export class SkillsComponent implements OnInit {
 		this.data = {
 	        datasets: [{
 	            data: [
-	                9.1,
+	                8.7,
 	                8.2,
-	                7,
-	                9,
-	                8,
+	                7.3,
+	                8.5,
 	                8.5
 	            ],
 	            backgroundColor: [
@@ -27,7 +26,6 @@ export class SkillsComponent implements OnInit {
 	                "#54F3AD",
 	                "#4BC0C0",
 	                "#FFCE56",
-	                "#E7E9ED",
 	                "#36A2EB"
 	            ],
 	            label: 'Web Technology and Framework'
@@ -37,7 +35,6 @@ export class SkillsComponent implements OnInit {
 	            "TypeScript",
 	            "SQL",
 	            "NoSQL",
-	            "Git",
 	            "CSS"
 	        ]
 	    }
