@@ -9,4 +9,4 @@ export const fadeIn = trigger('fadeIn', [
       style({opacity: 1}),
       animate('300ms', style({opacity: 0}))
     ])
-]);
+])

@@ -8,11 +8,26 @@ import { fadeIn } from '../animations/fade-in';
 	styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+	frameZone: any;
 
-	constructor() { }
+	constructor() { 
+
+	}
 
 	ngOnInit() {
-		window.scroll(0, 0);
+		window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+
+		this.frameZone = Array.from(document.querySelectorAll('a[href^="#"]'));
+
+		this.frameZone.forEach(anchor => {
+		    anchor.addEventListener('click', function (e) {
+		        e.preventDefault();
+
+		        document.querySelector(this.getAttribute('href')).scrollIntoView({
+		            behavior: 'smooth'
+		        });
+		    });
+		});
 	}
 
 }

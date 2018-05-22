@@ -8,7 +8,7 @@ import { fadeIn } from '../animations/fade-in';
 	styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-
+	
 	mySkillDiv: ISkillDiv
 
 	constructor() {
@@ -25,7 +25,7 @@ export class SkillsComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		window.scroll(0, 0);
+		window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
 	}
 }
 

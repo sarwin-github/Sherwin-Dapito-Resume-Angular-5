@@ -1,15 +1,21 @@
-.bg-img{ 
-    opacity: 0.9;
-}
+
 
 .social{
-    color: #263238 !important;
+    color: whitesmoke !important;
+    font-weight: 500px !important;
+}
+
+.social:hover{
+    color: red !important;
     font-weight: 500px !important;
 }
 
 .bg-img {
-    background-image: url(/assets/images/background2.jpg);
-    position: relative;
+    background: url(/assets/images/workspace.jpg)no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .bg-img:before {
@@ -19,15 +25,11 @@
     right: 0;
     top: 0; 
     bottom: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
 }
 
 p{
     font-size: 13px !important;
-}
-
-.name{
-    font-family: Gabriola !important;
 }
 
 .card{
@@ -36,4 +38,116 @@ p{
 
 .profile-picture{
     width: 100px;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0%, 100% 0, 100% 95%, 0 100%);
+    }
+
+    .slanted2 {
+        position: inherit;
+        background-color: #7283a7;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0%, 100% 0, 100% 95%, 0 100%);
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
+    }
+
+    .slanted2 {
+        position: inherit;
+        background-color: #7283a7;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0%, 100% 0, 100% 95%, 0 100%);
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
+    }
+
+    .slanted2 {
+        position: inherit;
+        background-color: #7283a7;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    .slanted2 {
+        position: inherit;
+        background-color: #7283a7;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 85%, 0 100%);
+    }
+
+    .slanted2 {
+        position: inherit;
+        background-color: #7283a7;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+}
+
+.mid{
+    height: 600px;
+}
+
+.text-main{
+    color: #a7ffeb  ;
+}
+
+.about{
+    font-size: 15px !important;
+}
+
+.container-text {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.h3-home{
+    position: relative !important;
+    color: white !important;
+}
+
+.container-fluid{
+    scroll-behavior: smooth !important;
 }

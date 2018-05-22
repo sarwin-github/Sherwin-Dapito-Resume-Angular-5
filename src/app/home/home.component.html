@@ -1,44 +1,100 @@
 
-<div class="container">
+<div class="container-fluid ">
 	<div class="row">
 		<!--The content below is only a placeholder and can be replaced.-->
-		<div class="col-md-12 py-md-5">
-			<div class="shadow rounded">
+		<div class="col-md-12 py-5 bg-img">
+			<div class="px-md-5 text-center my-3 container-text" [@fadeIn]>
+				<img src="/assets/images/profile-sarwin.png" class="img img-fluid rounded-circle profile-picture shadow-sm" alt="Sherwin Dapito"><br><br>
+				<br>
+				<h1 class="text-white">Sherwin Dapito</h1>
+				<h5 class="text-danger">Web Developer, Computer Engineer</h5><br>
+				<hr style="width: 50px;" class="text-white bg-white"><br><br>
+				<p class="px-md-5 text-white">An Enthusiastic Web Developer With a Passion for Learning. <br>A coder and a musician who want to learn more, grow and explore the world.</p> 
+				
+				<br>
+				<br>
+
+				<br>
+				<div class="social text-center text-danger pt-0">
+					<a class="social px-2" href="https://www.facebook.com/sherwin.dapito" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a class="social px-2" href=""><i class="fa fa-twitter"></i></a>
+					<a class="social px-2" href=""><i class="fa fa-google"></i></a>
+					<a class="social px-2" href=""><i class="fa fa-instagram"></i></a>
+				</div><br><br>
+			</div>
+		</div>
+
+		<!--The content below is only a placeholder and can be replaced.-->
+		<div class="col-md-12">
+			<div class="container">
 				<div class="row">
-					<div class="card col-md-6 py-5 px-4">
-						<div class="px-md-5 text-center my-3" [@fadeIn]>
-							<img src="/assets/images/profile-sarwin.png" class="img img-fluid rounded-circle profile-picture shadow-sm" alt="Sherwin Dapito"><br><br>
-							<br>
-							<h2>Sherwin Dapito</h2>
-							<h6 class="text-danger">Web Developer, Computer Engineer</h6><br>
-							<hr class="w-25"><br><br>
-							<p class="px-md-5">An Enthusiastic Web Developer With a Passion for Learning. A coder and a musician who want to learn more, grow and explore the world.</p><br>
-
-							<div class="social text-center text-danger pt-0">
-								<a class="social px-2" href="https://www.facebook.com/sherwin.dapito" target="_blank"><i class="fa fa-facebook"></i></a>
-								<a class="social px-2" href=""><i class="fa fa-twitter"></i></a>
-								<a class="social px-2" href=""><i class="fa fa-google"></i></a>
-								<a class="social px-2" href=""><i class="fa fa-instagram"></i></a>
-							</div><br><br><br>
-
-							<div class="d-none d-md-block d-lg-block">
-								<a class="btn btn-sm btn-danger px-4" routerLink="/experiences" style="border-radius: 0px;">Resume</a>
-								<a class="btn btn-sm btn-primary px-4" routerLink="/portfolio" style="border-radius: 0px;">Portfolio</a>
-							</div>
-
-							<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-								<a class="btn btn-sm btn-block btn-danger px-4 py-3" routerLink="/experiences" style="border-radius: 0px;">Resume</a><br>
-								<a class="btn btn-sm btn-block btn-primary px-4 py-3" routerLink="/portfolio" style="border-radius: 0px;">Portfolio</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 bg-img">
-						<div class="px-5 text-danger py-5 my-5">
-							
-						</div>
+					<div class="col-md-12 py-md-5">
+						<home-about></home-about>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="col-md-12 py-md-5 slanted" [@fadeIn]>
+			<home-skills></home-skills>
+		</div>
+
+
+		<div class="col-md-12 py-md-5" [@fadeIn]>
+			<span id="home-portfolio"></span>
+			<home-portfolio></home-portfolio>
+		</div>
+
+		<div class="col-md-12 py-md-5 slanted2" [@fadeIn]>
+			<div class="container">
+                <div class="row">
+                    <home-contact-us></home-contact-us>    
+                </div>
+            </div>
+		</div>
+
+		<div class="col-md-12 py-md-5" [@fadeIn]>
+			<span id="home-portfolio"></span>
+			<home-footer></home-footer>
+		</div>
 	</div>
 </div>
+
+<!--
+<div class="shadow rounded">
+	<div class="row">
+		<div class="card col-md-6 py-5 px-4">
+			<div class="px-md-5 text-center my-3" [@fadeIn]>
+				<img src="/assets/images/profile-sarwin.png" class="img img-fluid rounded-circle profile-picture shadow-sm" alt="Sherwin Dapito"><br><br>
+				<br>
+				<h2>Sherwin Dapito</h2>
+				<h6 class="text-danger">Web Developer, Computer Engineer</h6><br>
+				<hr class="w-25"><br><br>
+				<p class="px-md-5">An Enthusiastic Web Developer With a Passion for Learning. A coder and a musician who want to learn more, grow and explore the world.</p><br>
+
+				<div class="social text-center text-danger pt-0">
+					<a class="social px-2" href="https://www.facebook.com/sherwin.dapito" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a class="social px-2" href=""><i class="fa fa-twitter"></i></a>
+					<a class="social px-2" href=""><i class="fa fa-google"></i></a>
+					<a class="social px-2" href=""><i class="fa fa-instagram"></i></a>
+				</div><br><br><br>
+
+				<div class="d-none d-md-block d-lg-block">
+					<a class="btn btn-sm btn-danger px-4" routerLink="/experiences" style="border-radius: 0px;">Resume</a>
+					<a class="btn btn-sm btn-primary px-4" routerLink="/portfolio" style="border-radius: 0px;">Portfolio</a>
+				</div>
+
+				<div class="d-none d-sm-block d-block d-md-none d-lg-none">
+					<a class="btn btn-sm btn-block btn-danger px-4 py-3" routerLink="/experiences" style="border-radius: 0px;">Resume</a><br>
+					<a class="btn btn-sm btn-block btn-primary px-4 py-3" routerLink="/portfolio" style="border-radius: 0px;">Portfolio</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 bg-img">
+			<div class="px-5 text-danger py-5 my-5">
+				
+			</div>
+		</div>
+	</div>
+</div>
+-->

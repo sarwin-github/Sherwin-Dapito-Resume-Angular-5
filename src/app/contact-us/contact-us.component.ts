@@ -12,7 +12,7 @@ export class ContactUsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  	window.scroll(0, 0);
+  	window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
   }
 
 }

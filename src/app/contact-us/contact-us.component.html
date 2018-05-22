@@ -1,16 +1,14 @@
- <div class="container">
-    <div class="row">
-        <div class="col-md-12 py-md-5">
-            <div class="shadow rounded">
-                <div class="row">
-                    <div class="card col-md-3 bg-img d-none d-md-block d-lg-block">
-                        <div class="px-5 text-danger py-5 my-5">
-                            
-                        </div>
-                    </div>
 
-                    <div class="card col-md-9 py-5 px-md-5">
-                        <div class="row" [@fadeIn]>
+<div class="container-fluid">
+    <div class="row">
+        <!--The content below is only a placeholder and can be replaced.-->
+        <div class="col-md-12 py-5 bg-img px-md-5 shadow">
+            <div class="container">
+
+                <!-- Content -->
+                <div class="row" [@fadeIn]>
+                    <div class="card col-md-12 py-5 px-md-5">
+                        <div class="row">
                             <div class="col-md-4 col-sm-4 text-right pb-3 pt-5 d-none d-md-block d-lg-block">
                                 <!-- Personal Info --><br><br><br>
                                 <div style="color: #515557;">
@@ -42,51 +40,57 @@
                                 <form>
                                     <fieldset>
                                         <div class="form-group">
-                                          <div class="col-md-12">
-                                            <input type="text" class="form-control" id="inputSubject" name='subject' placeholder="Subject" required>
-                                          </div>
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control" id="inputSubject" name='subject' placeholder="Subject" required>
+                                            </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <div class="col-md-12">
-                                            <input type="text" class="form-control" id="name" name='name' placeholder="From" required>
-                                          </div>
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control" id="name" name='name' placeholder="From" required>
+                                            </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <div class="col-md-12">
-                                            <input type="text" class="form-control" id="email" name='email' placeholder="Email" required>
-                                          </div>
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control" id="email" name='email' placeholder="Email" required>
+                                            </div>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                          <label for="message" class="col-md-12 control-label">Message:</label>
-                                          <div class="col-md-12">
-                                            <textarea class="form-control" rows="3" id="message" name='message' required></textarea>
-                                          </div>
+                                            <label for="message" class="col-md-12 control-label">Message:</label>
+                                            <div class="col-md-12">
+                                                <textarea class="form-control" rows="3" id="message" name='message' required></textarea>
+                                            </div>
                                         </div>
 
                                         <br>
                                         <div class="form-group">
-                                          <div class="col-md-12 text-right">
-                                            <button class="px-4 mr-1 btn btn-danger btn-sm text-gray-dark" type="reset" style="border-radius: 0px;">Reset</button>
-                                            <button class="px-4 btn btn-dark btn-sm text-gray-dark" type="submit" style="border-radius: 0px;">Submit</button>
-                                          </div>
+                                            <div class="col-md-12 text-center d-none d-md-block d-sm-none d-lg-block">
+                                                <button class="px-5 mr-3 btn btn-danger text-gray-dark" type="reset" style="border-radius: 0px;">Reset</button>
+                                                <button class="px-5 btn btn-dark text-gray-dark" type="submit" style="border-radius: 0px;">Submit</button>
+                                            </div>
+
+                                            <div class="d-none d-md-none d-block d-lg-none d-sm-block">
+                                                <button class="px-5 mr-3 btn btn-danger btn-block text-gray-dark" type="reset" style="border-radius: 0px;">Reset</button><br>
+                                                <button class="px-5 btn btn-dark btn-block text-gray-dark" type="submit" style="border-radius: 0px;">Submit</button>
+                                            </div>
                                         </div>
                                     </fieldset>
                                 </form>
                             </div>
                         </div>
-                    </div>  
+                    </div>
 
-                    <div class="col-md-3 bg-img d-none d-sm-block d-block d-md-none d-lg-none">
-                        <div class="px-5 text-danger py-5 my-5">
-                            
-                        </div>
-                    </div>      
                 </div>
+
+
             </div>
         </div>
+
+
     </div>
 </div>
+
+
 

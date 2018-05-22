@@ -1,67 +1,152 @@
-.bg-img{ 
-    opacity: 0.9;
-}
+
 
 .social{
-    color: #263238 !important;
+    color: gray !important;
+    font-weight: 500px !important;
+}
+
+.social:hover{
+    color: red !important;
     font-weight: 500px !important;
 }
 
 .bg-img {
-    background-image: url(/assets/images/background2.jpg);
-    position: relative;
+    background: url(/assets/images/workspace.jpg)no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .bg-img:before {
     content: "";
     position: absolute;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
-    background: rgba(0,0,0,0.5);
+    left: 0; 
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
 }
 
 p{
     font-size: 13px !important;
 }
 
+.card{
+    border-radius: 0px;
+}
+
 .profile-picture{
-    width: 150px;
+    width: 100px;
 }
 
-.more{
-    cursor: pointer;
-}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0%, 100% 0, 100% 95%, 0 100%);
+    }
 
-.more:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.name{
-    font-family: Gabriola !important;
-}
-
-.dd-2{
-    font-size: 13px !important;
-}
-
-dd{
-   font-size: 12px !important; 
-}
-
-
-
-@media (min-width: 992px) {
-    .right{
-        border-left: 1px #bdbdbd solid !important;
+    .slanted2 {
+        position: inherit;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0%, 100% 0, 100% 95%, 0 100%);
     }
 }
-@media (min-width: 1200px) {
-    .right{
-        border-left: 1px #bdbdbd solid !important;
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
     }
+
+    .slanted2 {
+        position: inherit;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0%, 100% 0, 100% 95%, 0 100%);
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
+    }
+
+    .slanted2 {
+        position: inherit;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    .slanted2 {
+        position: inherit;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .slanted {
+        position: inherit;
+        background-color: #00acc1 ;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 85%, 0 100%);
+    }
+
+    .slanted2 {
+        position: inherit;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+    }
+}
+
+.mid{
+    height: 600px;
+}
+
+.text-main{
+    color: #a7ffeb  ;
+}
+
+.about{
+    font-size: 15px !important;
+}
+
+.container-text {
+    position: relative;
+    text-align: center;
+}
+
+.h3-home{
+    position: relative !important;
+    color: white !important;
+}
+
+.container-fluid{
+    scroll-behavior: smooth !important;
 }
 
 .card{
-    border-radius: 0px;
+    background-color: rgba(255,255,255, 1);
+    border-radius: 5px;
 }
