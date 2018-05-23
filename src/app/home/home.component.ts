@@ -1,16 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { fadeIn } from '../animations/fade-in';
+import { slideIn } from '../animations/slide-in';
+import { scrollAnimation } from '../animations/slide-from-left';
 
 @Component({
 	selector: 'app-home',
-	animations: [fadeIn],
+	animations: [fadeIn, slideIn, scrollAnimation],
 	templateUrl: './home.component.html',
 	styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 	frameZone: any;
+	state = 'hide'
 
-	constructor() { 
+	constructor(public el: ElementRef) { 
 
 	}
 
@@ -29,5 +32,20 @@ export class HomeComponent implements OnInit {
 		    });
 		});
 	}
+
+	@HostListener('window:scroll', ['$event'])
+	    checkScroll() {
+	      const componentPosition = 900
+	      const scrollPosition = window.pageYOffset;
+
+	      if (scrollPosition >= componentPosition) {
+	        this.state = 'show';
+	        console.log(scrollPosition)
+	      } else {
+	        this.state = 'hide';
+	        console.log(scrollPosition)
+	      }
+
+	    }
 
 }
