@@ -62,3 +62,11 @@ p{
     background-color: rgba(255,255,255, 1);
     border-radius: 5px;
 }
+
+.card-hover-shadow:hover{
+  transform: scale(1.03) !important;
+  transition: all .5s;
+  cursor: pointer;
+  position: relative;
+}
+

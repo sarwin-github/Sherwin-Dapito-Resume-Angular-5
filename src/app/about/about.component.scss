@@ -6,7 +6,7 @@
 }
 
 .social:hover{
-    color: red !important;
+    color: #ad1457 !important;
     font-weight: 500px !important;
 }
 
@@ -60,4 +60,20 @@ p{
 
 .card{
     background-color: rgba(0,0,0,0.2);
+}
+
+.btn-dark:hover{
+    background-color: white;
+    border: solid #ad1457 !important;
+    color: #ad1457 !important;
+    transform: scale(1.03) !important;
+    transition: all .5s;
+}
+
+.btn-danger:hover{
+    background-color: white;
+    border: solid #ad1457 !important;
+    color: #ad1457 !important;
+    transform: scale(1.03) !important;
+    transition: all .5s;
 }

@@ -62,3 +62,30 @@ p{
     background-color: rgba(255,255,255, 1);
     border-radius: 5px;
 }
+.card-hover-shadow:hover{
+  transform: scale(1.03) !important;
+  transition: all .5s;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-hover-shadow:hover:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 3px solid #d9534f;
+    border-left: 3px solid #d9534f;
+}
+.card-hover-shadow:hover:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top: 3px solid #d9534f;
+    border-right: 3px solid #d9534f;
+}

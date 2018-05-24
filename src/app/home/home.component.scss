@@ -6,7 +6,7 @@
 }
 
 .social:hover{
-    color: red !important;
+    color: #ad1457 !important;
     font-weight: 500px !important;
 }
 
@@ -141,3 +141,22 @@ p{
 .container-fluid{
     scroll-behavior: smooth !important;
 }
+
+.navigation-button{
+    position: fixed;
+    top: 85%;
+    right: 3%;
+    z-index: 2;
+    color: #263238;
+    cursor: pointer;
+    font-size: 35px;
+
+    p{
+        font-weight: 600;
+    }
+}
+
+.navigation-button:hover{
+    color: #ad1457;
+}
+

@@ -17,75 +17,73 @@ export class SkillsComponent implements OnInit {
 
 	constructor(public el: ElementRef) { 
 		this.data = {
-	        datasets: [{
-	            data: [
-	                8.7,
-	                8.2,
-	                7.3,
-	                8.5,
-	                8.5
-	            ],
-	            backgroundColor: [
-	                "#FF6384",
-	                "#54F3AD",
-	                "#4BC0C0",
-	                "#FFCE56",
-	                "#36A2EB"
-	            ],
-	            label: 'Web Technology and Framework'
-	        }],
-	        labels: [
-	            "JavaScript",
-	            "TypeScript",
-	            "SQL",
-	            "NoSQL",
-	            "CSS"
-	        ]
-	    }
+			datasets: [{
+				data: [
+				8.7,
+				8.2,
+				7.3,
+				8.5,
+				8.5
+				],
+				backgroundColor: [
+				"#FF6384",
+				"#54F3AD",
+				"#4BC0C0",
+				"#FFCE56",
+				"#36A2EB"
+				],
+				label: 'Web Technology and Framework'
+			}],
+			labels: [
+			"JavaScript",
+			"TypeScript",
+			"SQL",
+			"NoSQL",
+			"CSS"
+			]
+		}
 
-	    this.options = {
-           	title: {
-               display: true,
-               text: '',
-               fontSize: 16,
-               fontColor: 'white'
-           	},
-           	legend: {
-               position: 'right',
-           	},
-       	};
+		this.options = {
+			title: {
+				display: true,
+				text: '',
+				fontSize: 16,
+				fontColor: 'white'
+			},
+			legend: {
+				position: 'right',
+			},
+		};
 
-       	this.optionSmall = {
-       		title: {
-               display: true,
-               text: '',
-               fontSize: 16,
-               fontColor: 'white'
-           	},
-           	legend: {
+		this.optionSmall = {
+			title: {
+				display: true,
+				text: '',
+				fontSize: 16,
+				fontColor: 'white'
+			},
+			legend: {
 
-               position: 'top',
-           	},
-           	responsive: true,
-           	maintainAspectRatio: false
-       	}
+				position: 'top',
+			},
+			responsive: true,
+			maintainAspectRatio: false
+		}
 	}
 
-	@HostListener('window:scroll', ['$event'])
-	    checkScroll() {
+	@HostListener('window:scroll', ['$event']) checkScroll() {
 
-	    	const div = document.getElementById('section-skills').offsetTop;
-	    	console.log(div)
-	      const componentPosition = this.el.nativeElement.offsetTop
-	      const scrollPosition = window.pageYOffset;
+		const div = document.getElementById('section-skills').offsetTop;
+		const componentPosition = this.el.nativeElement.offsetTop
+		const scrollPosition = window.pageYOffset;
 
-	      if (scrollPosition >= div - 500) {
-	        this.state = 'show';
-	      } else {
-	        this.state = 'hide';
-	      }
+		if (scrollPosition >= div - 500) {
+			this.state = 'show';
+		} else {
+			this.state = 'hide';
+		}
 
-	    }
+	}
 
 	ngOnInit() {
 	}

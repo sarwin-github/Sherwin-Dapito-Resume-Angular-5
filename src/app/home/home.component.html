@@ -1,13 +1,17 @@
 
 <div class="container-fluid ">
 	<div class="row">
+		<div class="navigation-button d-none d-sm-none d-md-block" [@fadeInFrom]="navTop">
+			<span class="navigation-button" (click)="navigateTop()" class="fa fa-angle-double-up"></span><p class="text-uppercase pt-0 mt-0">Top</p>
+		</div>
+
 		<!--The content below is only a placeholder and can be replaced.-->
 		<div class="col-md-12 py-5 bg-img">
-			<div class="px-md-5 text-center my-3 container-text">
+			<div class="px-md-5 text-center my-3 container-text"  [@fadeInFrom]="state" [@fadeIn]>
 				<img src="/assets/images/profile-sarwin.png" class="img img-fluid rounded-circle profile-picture shadow-sm" alt="Sherwin Dapito"><br><br>
 				<br>
-				<h1 class="text-white" >Sherwin Dapito</h1>
-				<h5 class="text-danger"  >Web Developer, Computer Engineer</h5><br>
+				<h1 class="text-white">Sherwin Dapito</h1>
+				<h5 class="text-danger">Web Developer, Computer Engineer</h5><br>
 				<hr style="width: 50px;" class="text-white bg-white"><br><br>
 				<p class="px-md-5 text-white">An Enthusiastic Web Developer With a Passion for Learning. <br>A coder and a musician who want to learn more, grow and explore the world.</p> 
 				
@@ -53,7 +57,7 @@
             </div>
 		</div>
 
-		<div class="col-md-12 py-md-5" [@slideIn]>
+		<div class="col-md-12 py-md-5">
 			<span id="home-portfolio"></span>
 			<home-footer></home-footer>
 		</div>
