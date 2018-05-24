@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
 		const componentPosition = this.el.nativeElement.offsetTop
 		const scrollPosition = window.pageYOffset;
 
-		if (scrollPosition >= componentPosition) {
+		if (scrollPosition >= componentPosition && scrollPosition <= div) {
 			this.state = 'show';
 		} else {
 			this.state = 'hide';

@@ -77,7 +77,7 @@ export class SkillsComponent implements OnInit {
 		const componentPosition = this.el.nativeElement.offsetTop
 		const scrollPosition = window.pageYOffset;
 
-		if (scrollPosition >= div - 500) {
+		if (scrollPosition >= div - 500  && scrollPosition <= div + 500) {
 			this.state = 'show';
 		} else {
 			this.state = 'hide';

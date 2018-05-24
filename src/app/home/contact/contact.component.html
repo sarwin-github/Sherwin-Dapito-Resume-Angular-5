@@ -1,6 +1,6 @@
 <div class="col-md-12 py-5 px-md-5" id="section-contact">
     <div class="row" [@fadeIn]>
-        <div class="col-md-4 col-sm-4 text-right pb-3 pt-5 d-none d-md-block d-lg-block" [@fadeInFrom]="state">
+        <div class="col-md-4 col-sm-4 text-right pb-3 pt-5 d-none d-md-block d-lg-block">
             <!-- Personal Info --><br><br><br>
             <div style="color: whitesmoke;">
                 <p>Barangay, Ipilan</p>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="col-md-8 col-sm-8 pb-3">
-            <div class="text-center text-danger" [@fadeInFrom]="state">
+            <div class="text-center text-danger">
                 <h5 class="text-white">Get in touch via contact form or email me directly</h5>
                 <p class="text-main">I will get back to you as soon as possible</p>
 
@@ -30,25 +30,25 @@
 
             <form>
                 <fieldset>
-                    <div class="form-group" [@fadeInFrom]="state">
+                    <div class="form-group">
                       <div class="col-md-12">
                         <input type="text" class="form-control" id="inputSubject" name='subject' placeholder="Subject" required>
                       </div>
                     </div>
 
-                    <div class="form-group" [@fadeInFrom]="state">
+                    <div class="form-group">
                       <div class="col-md-12">
                         <input type="text" class="form-control" id="name" name='name' placeholder="From" required>
                       </div>
                     </div>
 
-                    <div class="form-group" [@fadeInFrom]="state">
+                    <div class="form-group">
                       <div class="col-md-12">
                         <input type="text" class="form-control" id="email" name='email' placeholder="Email" required>
                       </div>
                     </div>
                     <br>
-                    <div class="form-group" [@fadeInFrom]="state">
+                    <div class="form-group">
                       <label for="message" class="col-md-12 control-label text-white">Message:</label>
                       <div class="col-md-12">
                         <textarea class="form-control" rows="3" id="message" name='message' required></textarea>
@@ -58,7 +58,7 @@
                     <br>
                     <div class="form-group">
                       <div class="col-md-12 text-center d-none d-md-block d-lg-block d-sm-none">
-                        <button class="px-5 mr-1 btn btn-danger text-gray-dark py-2" type="reset" style="border-radius: 0px;">Reset</button>
+                        <button class="px-5 mr-3 btn btn-danger text-gray-dark py-2" type="reset" style="border-radius: 0px;">Reset</button>
                         <button class="px-5 btn btn-dark text-gray-dark py-2" type="submit" style="border-radius: 0px;">Submit</button>
                       </div>
 

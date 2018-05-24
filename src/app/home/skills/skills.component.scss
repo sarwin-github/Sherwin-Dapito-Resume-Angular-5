@@ -21,7 +21,12 @@
     transition: all .5s;
 }
 
+.progress-bar{
+    cursor: pointer;
+}
+
 .progress-bar:hover:before {
-    display: inline;
+    position: absolute;
+    right: 2%;
     content: attr(value);
 }
