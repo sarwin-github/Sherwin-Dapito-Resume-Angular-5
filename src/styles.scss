@@ -12,21 +12,29 @@ a{
     font-family: Ubuntu;
   }
  */
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+@mixin scroll-for-all{
   color: gray !important;
   font-size: 13px !important;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  color: gray !important;
-  font-size: 13px !important;
+
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+  @include scroll-for-all;
 }
-:-ms-input-placeholder { /* IE 10+ */
-  color: gray !important;
-  font-size: 13px !important;
+
+/* Firefox 19+ */
+::-moz-placeholder { 
+  @include scroll-for-all;
 }
-:-moz-placeholder { /* Firefox 18- */
-  color: gray !important;
-  font-size: 13px !important;
+
+/* IE 10+ */
+:-ms-input-placeholder { 
+  @include scroll-for-all;
+}
+
+/* Firefox 18- */
+:-moz-placeholder { 
+  @include scroll-for-all;
 }
 
 ::-webkit-scrollbar {

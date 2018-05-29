@@ -4,11 +4,11 @@
 	text-transform: uppercase !important;
 	font-weight: 600 !important;
 	letter-spacing: 2px !important;
-}
 
-.nav-link:hover{
-	color: #d9534f !important;
-	border-bottom: solid 1px red;
+    &:hover{
+        color: #d9534f !important;
+        border-bottom: solid 1px red;
+    }
 }
 
 .navbar-brand{

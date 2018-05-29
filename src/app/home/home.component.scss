@@ -3,11 +3,11 @@
 .social{
     color: whitesmoke !important;
     font-weight: 500px !important;
-}
 
-.social:hover{
-    color: #ad1457 !important;
-    font-weight: 500px !important;
+    &:hover{
+        color: #ad1457 !important;
+        font-weight: 500px !important;
+    }
 }
 
 .bg-img {
@@ -16,17 +16,28 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0; 
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+    }
 }
 
-.bg-img:before {
-    content: "";
-    position: absolute;
-    left: 0; 
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    background: rgba(0,0,0,0.8);
+.btn-dark, .btn-danger{
+    &:hover{
+        background-color: white;
+        border: solid #ad1457 !important;
+        color: #ad1457 !important;
+        transform: scale(1.03) !important;
+        transition: all .5s;
+    }
 }
+
 
 p{
     font-size: 13px !important;
@@ -40,8 +51,24 @@ p{
     width: 100px;
 }
 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
+/* Slanted divs for small and medium devices */
+@mixin slanted-sm-md-background($background-color){
+    position: inherit;
+    background-color: $background-color;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
+}
+
+/* Slanted divs css for large devices */
+@mixin slanted-lg-background($background-color){
+    position: inherit;
+    background-color: $background-color;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+}
+
+/* Slanted divs css for xs devices */
+@mixin slanted-xs{
     .slanted {
         background-color: #00acc1 ;
         margin-bottom: 30px;
@@ -50,69 +77,64 @@ p{
     .slanted2 {
         background-color: #7283a7;
     }
+}
+
+/* Slanted divs for sm devices */
+@mixin slanted-sm{
+    .slanted {
+       @include slanted-sm-md-background(#00acc1);
+    }
+
+    .slanted2 {
+        @include slanted-sm-md-background(#7283a7);
+    }
+}
+
+/* Slanted divs for md devices */
+@mixin slanted-md{
+    .slanted {
+       @include slanted-sm-md-background(#00acc1);
+    }
+
+    .slanted2 {
+        @include slanted-sm-md-background(#7283a7);
+    }
+}
+
+/* Slanted divs for lg devices */
+@mixin slanted-lg{
+    .slanted {
+        @include slanted-lg-background(#00acc1);
+    }
+
+    .slanted2 {
+        @include slanted-lg-background(#7283a7);
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    @include slanted-xs;
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-    .slanted {
-        background-color: #00acc1 ;
-        margin-bottom: 30px;
-    }
-
-    .slanted2 {
-        background-color: #7283a7;
-    }
+    @include slanted-xs;
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .slanted {
-        position: inherit;
-        background-color: #00acc1 ;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
-    }
-
-    .slanted2 {
-        position: inherit;
-        background-color: #7283a7;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
-    }
+    @include slanted-sm;
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .slanted {
-        position: inherit;
-        background-color: #00acc1 ;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
-    }
-
-    .slanted2 {
-        position: inherit;
-        background-color: #7283a7;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
-    }
+    @include slanted-md;
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    .slanted {
-        position: inherit;
-        background-color: #00acc1 ;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-    }
-
-    .slanted2 {
-        position: inherit;
-        background-color: #7283a7;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-    }
+    @include slanted-lg;
 }
 
 .mid{
@@ -151,13 +173,13 @@ p{
     cursor: pointer;
     font-size: 35px;
 
+    &:hover{
+        color: #ad1457;
+    }
+
     p{
         font-weight: 600;
     }
-}
-
-.navigation-button:hover{
-    color: #ad1457;
 }
 
 .enlarge {

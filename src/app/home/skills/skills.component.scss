@@ -5,28 +5,24 @@
 .progress {height: 25px;} // we increased it so the text is visible or change font size
 .progress .sr-only { position: relative; }
 
-.btn-primary:hover{
-    background-color: white;
-	border: solid #ad1457 !important;
-    color: #ad1457 !important;
-    transform: scale(1.03) !important;
-    transition: all .5s;
-}
-
-.btn-danger:hover{
-    background-color: white;
-	border: solid #ad1457 !important;
-    color: #ad1457 !important;
-    transform: scale(1.03) !important;
-    transition: all .5s;
-}
-
 .progress-bar{
     cursor: pointer;
+
+    &:hover:before {
+        position: absolute;
+        right: 2%;
+        content: attr(value);
+    }
 }
 
-.progress-bar:hover:before {
-    position: absolute;
-    right: 2%;
-    content: attr(value);
+.btn-primary{
+    &:hover{
+        background-color: white;
+        border: solid #ad1457 !important;
+        color: #ad1457 !important;
+        transform: scale(1.03) !important;
+        transition: all .5s;
+    }
 }
+
+

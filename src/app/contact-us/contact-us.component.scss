@@ -3,11 +3,11 @@
 .social{
     color: gray !important;
     font-weight: 500px !important;
-}
 
-.social:hover{
-    color: red !important;
-    font-weight: 500px !important;
+    &:hover{
+        color: red !important;
+        font-weight: 500px !important;
+    }
 }
 
 .bg-img {
@@ -16,16 +16,26 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0; 
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+    }
 }
 
-.bg-img:before {
-    content: "";
-    position: absolute;
-    left: 0; 
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    background: rgba(0,0,0,0.8);
+.btn-dark, .btn-danger{
+    &:hover{
+        background-color: white;
+        border: solid #ad1457 !important;
+        color: #ad1457 !important;
+        transform: scale(1.03) !important;
+        transition: all .5s;
+    }
 }
 
 p{
@@ -61,20 +71,4 @@ p{
 .card{
     background-color: rgba(255,255,255, 1);
     border-radius: 5px;
-}
-
-.btn-dark:hover{
-    background-color: white;
-    border: solid #ad1457 !important;
-    color: #ad1457 !important;
-    transform: scale(1.03) !important;
-    transition: all .5s;
-}
-
-.btn-danger:hover{
-    background-color: white;
-    border: solid #ad1457 !important;
-    color: #ad1457 !important;
-    transform: scale(1.03) !important;
-    transition: all .5s;
 }
