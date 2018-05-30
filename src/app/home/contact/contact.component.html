@@ -28,46 +28,58 @@
                 <br>
             </div>
 
-            <form>
-                <fieldset>
-                    <div class="form-group">
-                      <div class="col-md-12">
-                        <input type="text" class="form-control" id="inputSubject" name='subject' placeholder="Subject" required>
-                      </div>
-                    </div>
+            <form [formGroup]="contactForm">
+              <fieldset>
+                <div class="form-group">
+                  <div class="col-md-12">
+                      <input type="text" class="form-control" id="inputSubject" name='subject' placeholder="Subject" formControlName="subject" [ngClass]="!contactForm.controls['subject'].valid && contactForm.controls['subject'].touched ? 'invalidInput' : ''" required>
 
-                    <div class="form-group">
-                      <div class="col-md-12">
-                        <input type="text" class="form-control" id="name" name='name' placeholder="From" required>
-                      </div>
-                    </div>
+                      <!-- VALIDATION MESSAGE -->
+                      <label class="invalidLabel text-invalid fs-10 text-right mt-2" *ngIf="!contactForm.controls['subject'].valid && contactForm.controls['subject'].touched">Subject is required.</label>
+                  </div>
+                </div>
 
-                    <div class="form-group">
-                      <div class="col-md-12">
-                        <input type="text" class="form-control" id="email" name='email' placeholder="Email" required>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="form-group">
-                      <label for="message" class="col-md-12 control-label text-white">Message:</label>
-                      <div class="col-md-12">
-                        <textarea class="form-control" rows="3" id="message" name='message' required></textarea>
-                      </div>
-                    </div>
+                <div class="form-group">
+                  <div class="col-md-12">
+                      <input type="text" class="form-control" id="name" name='name' placeholder="From" formControlName="name" [ngClass]="!contactForm.controls['name'].valid && contactForm.controls['name'].touched ? 'invalidInput' : ''" required>
 
-                    <br>
-                    <div class="form-group">
-                      <div class="col-md-12 text-center d-none d-md-block d-lg-block d-sm-none">
-                        <button class="px-5 mr-3 btn btn-danger text-gray-dark py-2" type="reset" style="border-radius: 0px;">Reset</button>
-                        <button class="px-5 btn btn-dark text-gray-dark py-2" type="submit" style="border-radius: 0px;">Submit</button>
-                      </div>
+                      <!-- VALIDATION MESSAGE -->
+                      <label class="invalidLabel text-invalid fs-10 text-right mt-2" *ngIf="!contactForm.controls['name'].valid && contactForm.controls['name'].touched">Your full name is required.</label>
+                  </div>
+                </div>
 
-                      <div class="col-md-12 text-center d-block d-sm-block d-md-none d-lg-none">
-                        <button class="px-5 mr-1 btn btn-danger text-gray-dark py-3 btn-block" type="reset" style="border-radius: 0px;">Reset</button><br>
-                        <button class="px-5 btn btn-dark text-gray-dark py-3 btn-block" type="submit" style="border-radius: 0px;">Submit</button>
-                      </div>
-                    </div>
-                </fieldset>
+                <div class="form-group">
+                  <div class="col-md-12">
+                      <input type="text" class="form-control" id="email" name='email' placeholder="Email" formControlName="email" [ngClass]="!contactForm.controls['email'].valid && contactForm.controls['email'].touched ? 'invalidInput' : ''" required>
+
+                      <!-- VALIDATION MESSAGE -->
+                      <label class="invalidLabel text-invalid fs-10 text-right mt-2" *ngIf="!contactForm.controls['email'].valid && contactForm.controls['email'].touched">Invalid email format. Your valid email is required.</label>
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="message" class="col-md-12 control-label">Message:</label>
+                  <div class="col-md-12">
+                      <textarea class="form-control" rows="3" id="message" name='message' formControlName="message" [ngClass]="!contactForm.controls['message'].valid && contactForm.controls['message'].touched ? 'invalidInput' : ''" required></textarea>
+
+                      <!-- VALIDATION MESSAGE -->
+                      <label class="invalidLabel text-invalid fs-10 text-right mt-2" *ngIf="!contactForm.controls['message'].valid && contactForm.controls['message'].touched">Your message is required.</label>
+                  </div>
+                </div>
+
+                <br>
+                <div class="form-group">
+                  <div class="col-md-12 text-center d-none d-md-block d-lg-block d-sm-none">
+                    <button class="px-5 mr-3 btn btn-danger text-gray-dark py-2" type="reset" style="border-radius: 0px;">Reset</button>
+                    <button class="px-5 btn btn-dark text-gray-dark py-2" type="submit" style="border-radius: 0px;">Submit</button>
+                  </div>
+
+                  <div class="col-md-12 text-center d-block d-sm-block d-md-none d-lg-none">
+                    <button class="px-5 mr-1 btn btn-danger text-gray-dark py-3 btn-block" type="reset" style="border-radius: 0px;">Reset</button><br>
+                    <button class="px-5 btn btn-dark text-gray-dark py-3 btn-block" type="submit" style="border-radius: 0px;">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
             </form>
         </div>
     </div>

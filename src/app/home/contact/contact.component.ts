@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { fadeIn } from '../../animations/fade-in';
 import { scrollAnimation } from '../../animations/slide-from-left';
 import { fadeInFrom } from '../../animations/fade-in-from';
@@ -11,9 +12,21 @@ import { fadeInFrom } from '../../animations/fade-in-from';
 })
 export class ContactComponent implements OnInit {
 	state = 'hide';
-	constructor(public el: ElementRef) { }
+	contactForm : FormGroup;
+	contact     : IContactInput;
+
+	constructor(public el: ElementRef, 
+		private formBuilder: FormBuilder) { 
+		this.contact = <IContactInput>{}; 
+	}
 
 	ngOnInit() {
+		this.contactForm = this.formBuilder.group({
+			'email'   : [null, Validators.compose([Validators.required, Validators.email])],
+	    	'subject' : [null, Validators.compose([Validators.required])],
+	    	'name'    : [null, Validators.compose([Validators.required])],
+	    	'message' : [null, Validators.compose([Validators.required])]
+	    });
 	}
 
 	@HostListener('window:scroll', ['$event']) checkScroll() {
@@ -30,4 +43,13 @@ export class ContactComponent implements OnInit {
 
 	}
 
+}
+
+
+interface IContactInput{
+	name            : string;
+	email           : string;
+	password        : string;
+	confirmPassword : string;
+	address         : string;
 }

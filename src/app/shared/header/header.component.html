@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ml-auto" [ngClass]="fixed ? 'fixed-top': ''" (scroll)="onWindowScroll($event)" >
-
-	    <span class="navbar-toggler navbar-toggler-icon" data-toggle="collapse" data-target="#navCollapseContent" aria-controls="navCollapseContent" aria-expanded="false" aria-label="Toggle navigation"></span>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navCollapseContent" aria-controls="navCollapseContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	    
 	
 	  	<a class="navbar-brand d-md-none d-lg-none d-none d-sm-block d-block" href="#"></a>
 
@@ -9,19 +11,19 @@
 	  			<li class="nav-item d-md-none d-lg-none d-none d-sm-block d-block social-min">
 	  				<hr>
 	  			</li>
-	  			<li class="nav-item mx-2">
+	  			<li class="nav-item mx-2" data-toggle="collapse" data-target=".navbar-collapse.show">
 	  				<a class="nav-link" routerLink="/">Home</a> 
 	  			</li>
-	  			<li class="nav-item mx-2">
+	  			<li class="nav-item mx-2" data-toggle="collapse" data-target=".navbar-collapse.show">
 	  				<a class="nav-link" routerLink="/about">About</a> 
 	  			</li>
-	  			<li class="nav-item mx-2">
+	  			<li class="nav-item mx-2" data-toggle="collapse" data-target=".navbar-collapse.show">
 	  				<a class="nav-link" routerLink="/portfolio">Portfolio</a> 
 	  			</li>
-	  			<li class="nav-item mx-2">
+	  			<li class="nav-item mx-2" data-toggle="collapse" data-target=".navbar-collapse.show">
 	  				<a class="nav-link" routerLink="/skills">Skills</a> 
 	  			</li>
-	  			<li class="nav-item mx-2">
+	  			<li class="nav-item mx-2" data-toggle="collapse" data-target=".navbar-collapse.show">
 	  				<a class="nav-link" routerLink="/contact-me">Contact Me</a> 
 	  			</li>
 	  			<li class="nav-item d-none d-md-block d-lg-block mx-2">

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
@@ -32,6 +33,8 @@ const homeRoute: Routes = [
     ChartModule,
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule, 
+    ReactiveFormsModule,
     CommonModule,
   	RouterModule.forRoot(homeRoute)
   ],

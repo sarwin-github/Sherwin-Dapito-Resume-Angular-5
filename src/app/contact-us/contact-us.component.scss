@@ -72,3 +72,35 @@ p{
     background-color: rgba(255,255,255, 1);
     border-radius: 5px;
 }
+
+
+.invalidInput{
+    border: 1px solid red;
+    outline: none;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid[required], .ng-valid.required  {
+ /* border-left: 5px solid red;  green */
+}
+
+div.input{
+    position: relative;
+
+    label{
+        position: absolute;
+        top:0;
+        transform: translateY(-50%);
+        left:10px;
+        background: white;
+        padding: 5px 2px; 
+    }
+
+    input{
+        padding: 10px 10px;
+        outline: 0;
+    }
+}
