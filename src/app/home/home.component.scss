@@ -124,12 +124,12 @@ p{
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    @include slanted-sm;
+    @include slanted-xs;
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    @include slanted-md;
+    @include slanted-xs;
 }
 
 /* Large Devices, Wide Screens */
