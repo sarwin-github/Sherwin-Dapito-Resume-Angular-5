@@ -56,7 +56,7 @@ p{
     position: inherit;
     background-color: $background-color;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-    clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
 /* Slanted divs css for large devices */
