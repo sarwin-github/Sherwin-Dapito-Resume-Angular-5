@@ -7,25 +7,31 @@
 
 		<!--The content below is only a placeholder and can be replaced.-->
 		<div class="col-md-12 py-5 bg-img">
-			<div class="px-md-5 text-center my-3 container-text"  [@fadeInFrom]="state" [@fadeIn]>
-				<img src="/assets/images/profile-sarwin.png" class="img img-fluid rounded-circle profile-picture shadow-sm" alt="Sherwin Dapito"><br><br>
+			<div class="px-md-5 text-center my-3"  [@fadeInFrom]="state" [@fadeIn]>
+				
+				<img src="/assets/images/profile-sarwin.png" class="img img-fluid rounded-circle profile-picture shadow-sm container-text" alt="Sherwin Dapito"><br><br>
 				<br>
-				<h1 class="text-white">Sherwin Dapito</h1>
-				<h5 class="text-danger">Web Developer, Computer Engineer</h5><br>
-				<hr style="width: 50px;" class="text-white bg-white"><br><br>
-				<p class="px-md-5 text-white">An Enthusiastic Web Developer With a Passion for Learning. <br>A coder and a musician who want to learn more, grow and explore the world.</p> 
+				<h1 class="text-white container-text">Sherwin Dapito</h1>
+				<h5 class="text-danger line-1 typewriter d-none d-sm-none d-md-block container-text">Web Developer, Computer Engineer</h5><br>
+
+				<h5 class="text-danger d-block d-sm-block d-md-none container-text">Web Developer<br>Computer Engineer</h5><br>
+
+				<hr style="width: 50px;" class="text-white bg-white container-text"><br><br>
+				<p class="px-md-5 text-white container-text">An Enthusiastic Web Developer With a Passion for Learning. <br>A coder and a musician who want to learn more, grow and explore the world.</p> 
 				
 				<br>
 				<br>
 
 				<br>
-				<div class="social text-center text-danger pt-0">
+				<div class="social text-center text-danger pt-0 container-text">
 					<a class="social px-2" href="https://www.facebook.com/sherwin.dapito" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a class="social px-2" href="https://github.com/sarwin-github" target="_blank"><i class="fa fa-github"></i></a>
 					<a class="social px-2" href="https://www.linkedin.com/in/sherwin-dapito-20baa4126/"  target="_blank"><i class="fa fa-linkedin"></i></a>
-					<a class="social px-2" href=""><i class="fa fa-instagram"></i></a>
+					<a class="social px-2" href="https://www.instagram.com/sherwindapito/" target="_blank"><i class="fa fa-instagram"></i></a>
 				</div><br><br>
 			</div>
+			<!-- Particle.js -->
+			<particles [params]="myParticleParam" [style]="myParticleStyle" [width]="width" [height]="height"></particles>
 		</div>
 
 		<!--The content below is only a placeholder and can be replaced.-->

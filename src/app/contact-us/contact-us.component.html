@@ -6,10 +6,10 @@
             <div class="container">
 
                 <!-- Content -->
-                <div class="row" [@fadeIn]>
+                <div class="row">
                     <div class="card col-md-12 py-5 px-md-5">
                         <div class="row">
-                            <div class="col-md-4 col-sm-4 text-right pb-3 pt-5 d-none d-md-block d-lg-block">
+                            <div class="col-md-4 col-sm-4 text-right pb-3 pt-5 d-none d-md-block d-lg-block" [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
                                 <!-- Personal Info --><br><br><br>
                                 <div style="color: #515557;">
                                     <p>Barangay, Ipilan</p>
@@ -37,7 +37,7 @@
                                     <br>
                                 </div>
 
-                                <form [formGroup]="contactForm" >
+                                <form [formGroup]="contactForm" [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
                                     <fieldset>
                                         <div class="form-group">
                                             <div class="col-md-12">

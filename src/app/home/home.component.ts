@@ -15,6 +15,11 @@ export class HomeComponent implements OnInit {
 	state = 'show';
 	navTop = 'hide';
 
+	myParticleStyle: object = {};
+    myParticleParam: object = {};
+    width: number = 100;
+    height: number = 100;
+
 	constructor(public el: ElementRef) { 
 
 	}
@@ -33,7 +38,35 @@ export class HomeComponent implements OnInit {
 				});
 			});
 		});
+
+		this.particleStyle();
 	}
+
+	particleStyle(){
+		this.myParticleStyle = {
+            'position': 'absolute',
+            'z-index': 0,
+            'top': 0,
+            'left': 0,
+            'right': 0,
+            'bottom': 0,
+        };
+		 
+	    this.myParticleParam = {
+            particles: {
+                number: {
+                    value: 40,
+                },
+                color: {
+                    value: '#ff0000'
+                },
+                shape: {
+					"type": "triangle"
+				}
+	        }
+	    };
+	}
+
 
 	@HostListener('window:scroll', ['$event'])
 	checkScroll() {

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeIn } from '../animations/fade-in';
+import { mainAnimations } from '../animations/all-animation';
 
 @Component({
 	selector: 'app-skills',
-	animations: [fadeIn],
+	animations: [fadeIn, mainAnimations],
 	templateUrl: './skills.component.html',
 	styleUrls: ['./skills.component.scss']
 })

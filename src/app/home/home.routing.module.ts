@@ -18,6 +18,7 @@ import { SkillsComponent as HomeSkills } from './skills/skills.component';
 import { ChartModule } from 'primeng/chart';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { ParticlesModule } from 'angular-particle';
 
 const homeRoute: Routes = [
   	{ path: '', component: HomeComponent },
@@ -36,6 +37,7 @@ const homeRoute: Routes = [
     FormsModule, 
     ReactiveFormsModule,
     CommonModule,
+    ParticlesModule,
   	RouterModule.forRoot(homeRoute)
   ],
   exports: [RouterModule],

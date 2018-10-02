@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { fadeIn } from '../animations/fade-in';
 import { Http, Headers, Response, RequestOptions } from '@angular/http';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { mainAnimations } from '../animations/all-animation';
 
 @Component({
 	selector: 'app-contact-us',
-	animations: [fadeIn],
+	animations: [fadeIn, mainAnimations],
 	templateUrl: './contact-us.component.html',
 	styleUrls: ['./contact-us.component.scss']
 })
