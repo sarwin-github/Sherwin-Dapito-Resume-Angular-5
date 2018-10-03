@@ -1,16 +1,19 @@
-
 <div class="container-fluid">
     <div class="row">
         <!--The content below is only a placeholder and can be replaced.-->
         <div class="col-md-12 py-5 bg-img px-md-5 shadow">
             <div class="container">
-
+                
                 <!-- Content -->
                 <div class="row">
-                    <div class="card col-md-12 py-5 px-md-5">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4 text-right pb-3 pt-5 d-none d-md-block d-lg-block" [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-                                <!-- Personal Info --><br><br><br>
+                    <div class="card col-md-12 text-center">
+                        <div class="text-center pt-5">
+                            <h5>Get in touch via contact form or email me directly</h5>
+                            <h6 class="text-danger pb-2">I will get back to you as soon as possible</h6>
+                        </div>
+                        <div class="row px-md-5 py-5">
+                            <div class="col-md-4 col-sm-4 text-right pb-3 d-none d-md-block d-lg-block" [@animate]="{value:'*', params:{ y:'-100px', delay:'600ms' }}">
+                                <!-- Personal Info --><br>
                                 <div style="color: #515557;">
                                     <p>Barangay, Ipilan</p>
                                     <p>Tayabas City, Philippines</p>
@@ -29,15 +32,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-8 col-sm-8 pb-3">
-                                <div class="text-center text-danger">
-                                    <h5>Get in touch via contact form or email me directly</h5>
-                                    <p>I will get back to you as soon as possible</p>
-
-                                    <br>
-                                </div>
-
-                                <form [formGroup]="contactForm" [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
+                            <div class="col-md-8 col-sm-8 pb-3 text-left">
+                                <form [formGroup]="contactForm" [@animate]="{value:'*', params:{ y:'-100px', delay:'600ms' }}">
                                     <fieldset>
                                         <div class="form-group">
                                             <div class="col-md-12">
