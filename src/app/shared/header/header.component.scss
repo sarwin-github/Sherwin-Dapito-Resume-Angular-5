@@ -5,10 +5,16 @@
 	font-weight: 600 !important;
 	letter-spacing: 2px !important;
 
-    &:hover{
-        color: #d9534f !important;
-        border-bottom: solid 1px red;
+   
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+    &:before {
+        background: #d9534f !important;
+        height: 1px !important;
     }
+
 }
 
 .navbar-brand{
