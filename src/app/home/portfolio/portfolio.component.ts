@@ -2,10 +2,11 @@ import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { fadeIn } from '../../animations/fade-in';
 import { scrollAnimation } from '../../animations/slide-from-left';
 import { fadeInFrom } from '../../animations/fade-in-from';
+import { mainAnimations } from '../../animations/all-animation';
 
 @Component({
 	selector: 'home-portfolio',
-	animations: [fadeIn, scrollAnimation, fadeInFrom],
+	animations: [fadeIn, scrollAnimation, fadeInFrom, mainAnimations],
 	templateUrl: './portfolio.component.html',
 	styleUrls: ['./portfolio.component.scss']
 })
