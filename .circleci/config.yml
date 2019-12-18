@@ -47,42 +47,13 @@ jobs:
           name: Deploy Master to Heroku
           command: |
               git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
-  
-  # deploy_amazon
-  deploy_amazon:
-    docker:
-      - image: circleci/node:6.10.2
-    working_directory: ~/Sherwin-Dapito-Resume-Angular-5
-
-    steps:
-      - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - "87:cc:bc:35:b1:ed:e0:5e:6a:ed:94:03:db:6b:7d:50"
-
-      -run:
-          name: Deploy to Amazon
-          command: |
-            cd Sherwin-Dapito-Resume-Angular-5
-            sudo git reset --hard HEAD
-            sudo git pull origin master
-            sudo ng build --prod --aot
-
-      -run:
-          name: Restart PM2
-          command: |
-            cd Sherwin-Dapito-Resume-Angular-5
-            sudo pm2 restart all
 
 workflows:
   version: 2
-  build_and_deploy_heroku_and_deploy_amazon:
+  build_and_deploy_heroku:
     jobs:
       - build
       - deploy_heroku:
-          requires:
-            - build
-      - deploy_amazon:
           requires:
             - build
 #          filters:
