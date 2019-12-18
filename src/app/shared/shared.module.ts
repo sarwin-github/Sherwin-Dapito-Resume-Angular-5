@@ -14,8 +14,7 @@ import { RouterModule } from '@angular/router';
     HttpModule,
     RouterModule
   ],
-  declarations: [
-  ],
+  declarations: [],
   exports: [
     CommonModule,
     FormsModule,

@@ -5,16 +5,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { HomeRoutingModule } from './home/home.routing.module';
 import { SharedModule } from './shared/shared.module';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ChartModule } from 'primeng/chart';
+import { MainModule } from './shared/main.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +22,7 @@ import { ChartModule } from 'primeng/chart';
     FormsModule, 
     ReactiveFormsModule,
     CommonModule,
-    HomeRoutingModule,
+    MainModule,
     SharedModule
   ],
   providers: [],

@@ -1,0 +1,16 @@
+.modal {
+    display: none; /* Hidden by default */
+    overflow-y: scroll !important;
+    position: fixed; /* Stay in place front is invalid - may break your css so removed */  
+    left: 0;
+    right:0; /* Full width (left and right 0) */
+    top: 0;
+    bottom: 0; /* Full height top and bottom 0 */
+    overflow: auto; /* Enable scroll if needed */
+    z-index: 9999999; /* Sit on top - higher than any other z-index in your site*/
+}
+
+.modal-gallery-content, #caption { 
+    animation-name: fadein;
+    animation-duration: 0.6s;
+}
