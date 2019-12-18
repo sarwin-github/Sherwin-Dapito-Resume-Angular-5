@@ -59,10 +59,14 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "87:cc:bc:35:b1:ed:e0:5e:6a:ed:94:03:db:6b:7d:50"
+      -run: 
+        name: Execute Deploy run-script
+        command: |
+          ssh -o StrictHostKeyChecking=no "sh automate.sh"
 
 workflows:
   version: 2
-  build_and_deploy_heroku_and_deploy_amazon:
+  build_and_deploy_amazon:
     jobs:
       - build
       - deploy_heroku:
