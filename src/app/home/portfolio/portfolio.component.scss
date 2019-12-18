@@ -17,6 +17,12 @@
   }
 }
 
+.main-image{
+    width:  300px;
+    height: 250px;
+    object-fit: cover !important;
+    border: 2px solid #e2e2e2;
+}
 
 .modal {
     display: none; /* Hidden by default */

@@ -45,7 +45,7 @@
 
 	        <div class="media card-block">
 		        <div class="media-body text-left pl-3 pt-lg-1">
-		            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Minerva IO</h5><br>
+		            <h5 class="card-title text-danger " style="margin-top: 20px; margin-bottom: 0;">Minerva IO</h5><br>
 		            <p class="card-title">Implemented Frontend design based on a wireframe given. It is a frontend of a data mining app <a href="https://mnrva.io" target="_blank">(https://mnrva.io)</a>. The app was created using Angular 6, TypeScript, and RxJS. 
 		            <br><br> <span class="text-danger">Check Link: </span> 
 		            <a href="http://minerva-platform.herokuapp.com/" target="_blank">http://minerva-platform.herokuapp.com/</a></p>
@@ -103,7 +103,7 @@
 
 	        <div class="media card-block">
 		        <div class="media-body text-left pl-3 pt-lg-1">
-		            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">The Brand Tool</h5><br>
+		            <h5 class="card-title text-danger " style="margin-top: 20px; margin-bottom: 0;">The Brand Tool</h5><br>
 		            <p class="card-title">A Social Media and Domain management web application that allow a user to search for brand name or username availability across multiple social media platforms and domain. If the target domain or social media is available a user also has options to register to it with just one click. This app was created using the MEAN stack.
 		            <br><br> <span class="text-danger">Check Link: </span> 
 		            <a href="https://thebrandtool.com" target="_blank">https://thebrandtool.com</a></p>
@@ -120,12 +120,12 @@
 	</div>
 
 
-	<!-- PHOTOGRAPHY MODAL -->
-	<div class="modal " id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<!-- TRAVEL MODAL -->
+	<div class="modal " id="portfolioModal" tabindex="-1" role="dialog">
 	  <div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title text-danger" id="exampleModalLabel">Photography Website</h5>
+	        <h5 class="modal-title text-danger" id="exampleModalLabel">Ease Travel Service</h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
@@ -135,13 +135,19 @@
 	      	<div id="photographyCarousel" class="carousel slide" data-ride="carousel">
 	      	  <div class="carousel-inner">
 	      	    <div class="carousel-item active">
-	      	      <img class="d-block w-100" src="/assets/images/photography2.jpg" alt="First slide">
+	      	      <img class="d-block w-100" src="/assets/images/travel-1.jpg" alt="First slide">
 	      	    </div>
 	      	    <div class="carousel-item">
-	      	      <img class="d-block w-100" src="/assets/images/photography3.jpg" alt="Second slide">
+	      	      <img class="d-block w-100" src="/assets/images/travel-2.jpg" alt="Second slide">
 	      	    </div>
 	      	    <div class="carousel-item">
-	      	      <img class="d-block w-100" src="/assets/images/Photography4.jpg" alt="Third slide">
+	      	      <img class="d-block w-100" src="/assets/images/travel-3.jpg" alt="Third slide">
+	      	    </div>
+	      	    <div class="carousel-item">
+	      	      <img class="d-block w-100" src="/assets/images/travel-4.jpg" alt="Third slide">
+	      	    </div>
+	      	    <div class="carousel-item">
+	      	      <img class="d-block w-100" src="/assets/images/travel-5.jpg" alt="Third slide">
 	      	    </div>
 	      	  </div>
 	      	  <a class="carousel-control-prev" href="#photographyCarousel" role="button" data-slide="prev">
@@ -156,17 +162,17 @@
 
 	        <div class="media card-block">
 	          <div class="media-body text-left pl-3 pt-lg-4" [@fadeInFrom]="state">
-	            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">ZASPiX Photography Blog</h5><br>
-	            <p class="card-title">A sample photography blog website created using Node JS, Embedded JavaScript (EJS), Bootstrap 4 and JQuery. This photography website showcases the skill and portfolio of the photographer.
+	            <h5 class="card-title text-danger " style="margin-top: 20px; margin-bottom: 0;">Ease Travel Service</h5><br>
+	            <p class="card-title">A one-stop shop for travel in Africa, to bring together in a single application the best service providers in the field of travel, tourism and leisure: Air and land transport, Accommodation, Tourist and cultural activities, Insurance travel, Tourist and Economic Guide. Created using angular.
 	            <br><br> <span class="text-danger">Check Link: </span> 
-	            <a href="https://zaspix.herokuapp.com" target="_blank">https://zaspix.herokuapp.com</a></p>
+	            <a href="https://ease-ts.com" target="_blank">https://ease-ts.com</a></p>
 	            <br><br>
 	          </div>
 	        </div>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <a href="https://zaspix.herokuapp.com" target="_blank" class="btn btn-primary">Visit Link</a>
+	        <a href="https://ease-ts.com" target="_blank" class="btn btn-primary">Visit Link</a>
 	      </div>
 	    </div>
 	  </div>
@@ -174,16 +180,35 @@
 
 
 	<div class="row">
+		<!-- TRAVEL WEBSITE -->
+		<div class="col-md-12 text-center py-20">
+		    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#portfolioModal"><hr>
+		    	<div class="d-none d-sm-block d-block d-md-none pl-0 d-lg-none">
+		    		<img src="/assets/images/photography2.jpg" class="img img-fluid  main-image" >
+		    	</div>
+		        <div class="media card-block">
+		          <img src="/assets/images/travel-1.jpg" class="img img-fluid m-2 mt-md-4  d-none d-md-block d-lg-block main-image" >
+		          <div class="media-body text-left pl-3 pt-lg-4" [@fadeInFrom]="state">
+		            <h5 class="card-title text-danger " style="margin-top: 20px; margin-bottom: 0;">Ease Travel Service</h5><br>
+		            <p class="card-title">A one-stop shop for travel in Africa, to bring together in a single application the best service providers in the field of travel, tourism and leisure: Air and land transport, Accommodation, Tourist and cultural activities, Insurance travel, Tourist and Economic Guide. Created using angular.
+		            <br><br> <span class="text-danger">Check Link: </span> 
+		            <a href="https://ease-ts.com" target="_blank">https://ease-ts.com</a></p>
+		            <br><br>
+		          </div>
+		        </div>
+		    </div>
+		</div>
+
 		<!-- BRAND TOOL APP -->
 		<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}"><hr>
 		    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#brandtoolModal">
 		    	<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-		    		<img src="/assets/images/restaurant.jpg" class="img img-fluid more" style="width: 100%; border: 2px solid #e2e2e2;">
+		    		<img src="/assets/images/restaurant.jpg" class="img img-fluid  main-image" >
 		    	</div>
 		        <div class="media card-block">
-		          <img src="/assets/images/brandtool.jpg" class="img img-fluid m-2 mt-md-4 more d-none d-md-block d-lg-block" style="width: 30%; border: 2px solid #e2e2e2;">
+		          <img src="/assets/images/brandtool.jpg" class="img img-fluid m-2 mt-md-4  d-none d-md-block d-lg-block main-image" >
 		          	<div class="media-body text-left pl-3 pt-lg-4">
-			            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">The Brand Tool</h5><br>
+			            <h5 class="card-title text-danger " style="margin-top: 20px; margin-bottom: 0;">The Brand Tool</h5><br>
 			            <p class="card-title">A Social Media and Domain management web application that allow a user to search for brand name or username availability across multiple social media platforms and domain. If the target domain or social media is available a user also has options to register to it with just one click. This app was created using the MEAN stack.
 			            <br><br> <span class="text-danger">Check Link: </span> 
 			            <a href="https://thebrandtool.com/" target="_blank">https://thebrandtool.com/</a></p>
@@ -197,36 +222,17 @@
 		<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
 		    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#minervaModal">
 		    	<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-		    		<img src="/assets/images/restaurant.jpg" class="img img-fluid more" style="width: 100%; border: 2px solid #e2e2e2;">
+		    		<img src="/assets/images/restaurant.jpg" class="img img-fluid  main-image" >
 		    	</div>
 		        <div class="media card-block">
-		          <img src="/assets/images/minerva_1.jpg" class="img img-fluid m-2 mt-md-4 more d-none d-md-block d-lg-block" style="width: 30%; border: 2px solid #e2e2e2;">
+		          <img src="/assets/images/minerva_1.jpg" class="img img-fluid m-2 mt-md-4  d-none d-md-block d-lg-block main-image" >
 		          	<div class="media-body text-left pl-3 pt-lg-3">
-			            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Minerva IO</h5><br>
+			            <h5 class="card-title text-danger " style="margin-top: 20px; margin-bottom: 0;">Minerva IO</h5><br>
 			            <p class="card-title">Implemented Frontend design based on a wireframe given. It is a frontend of a data mining app <a href="https://mnrva.io" target="_blank">(https://mnrva.io)</a>. The app was created using Angular 6, TypeScript, and RxJS. 
 			            <br><br> <span class="text-danger">Check Link: </span> 
 			            <a href="https://thebrandtool.com/" target="_blank">https://thebrandtool.com/</a></p>
 			            <br><br>
 		          	</div>
-		        </div>
-		    </div><hr>
-		</div>
-
-		<!-- PHOTOGRAPHY WEBSITE -->
-		<div class="col-md-12 text-center py-20">
-		    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#portfolioModal">
-		    	<div class="d-none d-sm-block d-block d-md-none pl-0 d-lg-none">
-		    		<img src="/assets/images/photography2.jpg" class="img img-fluid more" style="width: 100%; border: 2px solid #e2e2e2;">
-		    	</div>
-		        <div class="media card-block">
-		          <img src="/assets/images/photography2.jpg" class="img img-fluid m-2 mt-md-4 more d-none d-md-block d-lg-block" style="width: 30%; border: 2px solid #e2e2e2;">
-		          <div class="media-body text-left pl-3 pt-lg-4" [@fadeInFrom]="state">
-		            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Photography Website</h5><br>
-		            <p class="card-title">A sample photography blog website created using Node JS, Embedded JavaScript (EJS), Bootstrap 4 and JQuery. This photography website showcases the skill and portfolio of the photographer.
-		            <br><br> <span class="text-danger">Check Link: </span> 
-		            <a href="https://zaspix.herokuapp.com" target="_blank">https://zaspix.herokuapp.com</a></p>
-		            <br><br>
-		          </div>
 		        </div>
 		    </div><hr>
 		</div>
