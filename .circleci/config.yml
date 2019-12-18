@@ -59,16 +59,15 @@ jobs:
       - run:
           name: Deploy to amazon
           command: |
-            ssh -i '$AWS_KEY_PPK' ubuntu@$AMAZON_HOST 'sh automate.sh'
+            ssh -i '$AWS_KEY_PPK' ubuntu@$AMAZON_HOST 
+            'y'
+            'sh automate.sh'
 
 workflows:
   version: 2
   build_and_deploy_heroku_and_deploy_amazon:
     jobs:
       - build
-      - deploy_heroku:
-          requires:
-            - build
       - deploy_amazon:
           requires:
             - build
