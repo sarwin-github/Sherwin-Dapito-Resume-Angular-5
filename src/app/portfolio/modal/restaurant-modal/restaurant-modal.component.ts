@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'restaurant-modal',
@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./restaurant-modal.component.scss']
 })
 export class RestaurantModalComponent implements OnInit {
+	@Input() item: any;
+  	constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  	ngOnInit() {
+  	}
 
 }
