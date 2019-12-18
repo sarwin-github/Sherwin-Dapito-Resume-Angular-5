@@ -52,6 +52,8 @@ jobs:
   deploy_amazon:
     docker:
       - image: circleci/node:6.10.2
+    working_directory: ~/Sherwin-Dapito-Resume-Angular-5
+
     steps:
       - checkout
       - add_ssh_keys:
