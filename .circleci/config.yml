@@ -37,19 +37,18 @@ jobs:
           name: build angular app
           command: 'npm run-script build'
 
-  # deploy to heroku
+  # deploy_heroku
   deploy_heroku:
     docker:
       - image: circleci/node:6.10.2
     steps:
       - checkout
-
       - run:
           name: Deploy Master to Heroku
           command: |
               git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
-
-  #deploy to amazon
+  
+  # deploy_amazon
   deploy_amazon:
     docker:
       - image: circleci/node:6.10.2
@@ -76,7 +75,7 @@ jobs:
 
 workflows:
   version: 2
-  build_and_deploy:
+  build_and_deploy_heroku_and_deploy_amazon:
     jobs:
       - build
       - deploy_heroku:
