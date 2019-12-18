@@ -43,6 +43,7 @@ jobs:
       - image: circleci/node:6.10.2
     steps:
       - checkout
+
       - run:
           name: Deploy Master to Heroku
           command: |
@@ -54,6 +55,7 @@ jobs:
       - image: circleci/node:6.10.2
     steps:
       - checkout
+      
       - add_ssh_keys:
           fingerprints:
             - "87:cc:bc:35:b1:ed:e0:5e:6a:ed:94:03:db:6b:7d:50"
