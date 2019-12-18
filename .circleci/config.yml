@@ -62,7 +62,7 @@ jobs:
       -run: 
         name: Execute Deploy run-script
         command: |
-          ssh -o StrictHostKeyChecking=no ubuntu@$AMAZON_HOST 'bash -c "sh automate.sh"'
+          ssh -o StrictHostKeyChecking=no ubuntu@$AMAZON_HOST "cd /apps"
 
 workflows:
   version: 2
