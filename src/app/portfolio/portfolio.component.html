@@ -13,172 +13,19 @@
 								<h3>Projects and Website</h3>
 								<h6 class="text-danger">List of Projects and Website I created, starting from January 2017</h6>
 							</div>
-
-							<!-- TRAVEL WEBSITE -->
-							<div class="col-md-12 text-center py-20" [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#travelModal"><hr>
+							<hr>
+							<div class="col-md-12 text-center py-20" [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}" *ngFor="let item of portfolioItems">
+							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" attr.data-target="{{'#' + item.modal}}">
 							    	<div class="d-none d-sm-block d-block d-md-none pl-0 d-lg-none">
-							    		<img src="/assets/images/photography2.jpg" class="img img-fluid  main-image" >
+							    		<img src="{{item.image}}" >
 							    	</div>
 							        <div class="media card-block">
-							          <img src="/assets/images/travel-1.jpg" class="img img-fluid m-2 mt-md-4  d-none d-md-block d-lg-block main-image" >
+							          <img src="{{item.image}}" class="img img-fluid m-2 mt-md-4  d-none d-md-block d-lg-block main-image" >
 							          <div class="media-body text-left pl-3 pt-lg-4" [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							            <h5 class="card-title text-danger " style="margin-top: 20px; margin-bottom: 0;">Ease Travel Service</h5><br>
-							            <p class="card-title">A one-stop shop for travel in Africa, to bring together in a single application the best service providers in the field of travel, tourism and leisure: Air and land transport, Accommodation, Tourist and cultural activities, Insurance travel, Tourist and Economic Guide. Created using angular.
+							            <h5 class="card-title text-danger " style="margin-top: 20px; margin-bottom: 0;">{{item.title}}</h5><br>
+							            <p class="card-title"><span [innerHtml]="item.description"></span>
 							            <br><br> <span class="text-danger">Check Link: </span> 
-							            <a href="https://ease-ts.com" target="_blank">https://ease-ts.com</a></p>
-							            <br><br>
-							          </div>
-							        </div>
-							    </div><hr>
-							</div>
-
-							<!-- BRAND TOOL APP -->
-							<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#brandtoolModal">
-							    	<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-							    		<img src="/assets/images/restaurant.jpg" class="img img-fluid more main-image" >
-							    	</div>
-							        <div class="media card-block">
-							          <img src="/assets/images/brandtool.jpg" class="img img-fluid m-2 mt-md-4  d-none d-md-block d-lg-block main-image">
-							          	<div class="media-body text-left pl-3 pt-lg-4">
-								            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">The Brand Tool</h5><br>
-								            <p class="card-title">A Social Media and Domain management web application that allow a user to search for brand name or username availability across multiple social media platforms and domain. If the target domain or social media is available a user also has options to register to it with just one click. This app was created using the MEAN stack.
-								            <br><br> <span class="text-danger">Check Link: </span> 
-								            <a href="https://thebrandtool.com/" target="_blank">https://thebrandtool.com/</a></p>
-								            <br><br>
-							          	</div>
-							        </div>
-							    </div><hr>
-							</div>
-
-							<!-- MINERVA APP -->
-							<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#minervaModal">
-							    	<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-							    		<img src="/assets/images/restaurant.jpg" class="img img-fluid more main-image" >
-							    	</div>
-							        <div class="media card-block">
-							          <img src="/assets/images/minerva_1.jpg" class="img img-fluid m-2 mt-md-4 more main-image d-none d-md-block d-lg-block">
-							          	<div class="media-body text-left pl-3 pt-lg-3">
-								            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Minerva IO</h5><br>
-								            <p class="card-title">Implemented Frontend design based on a wireframe given. It is a frontend of a data mining app <a href="https://mnrva.io" target="_blank">(https://mnrva.io)</a>. The app was created using Angular 6, TypeScript, and RxJS. 
-								            <br><br> <span class="text-danger">Check Link: </span> 
-								            <a href="http://minerva-platform.herokuapp.com" target="_blank">http://minerva-platform.herokuapp.com</a></p>
-								            <br><br>
-							          	</div>
-							        </div>
-							    </div><hr>
-							</div>
-
-							<!-- RESTAURANT APP -->
-							<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#restaurantAppModal">
-							    	<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-							    		<img src="/assets/images/restaurant.jpg" class="img img-fluid more main-image" >
-							    	</div>
-							        <div class="media card-block">
-							          <img src="/assets/images/restaurant.jpg" class="img img-fluid m-2 mt-md-4 more main-image d-none d-md-block d-lg-block">
-							          <div class="media-body text-left pl-3 pt-lg-4">
-							            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Restaurant Web App</h5><br>
-							            <p class="card-title">A Sample Restaurant Web App for Kamayan sa Palaisdaan Restaurant, Hotel and Resort where you can check their menu, hotel prices, services and other cool stuff. Created using Angular 6 and Typescript. 
-							            <br><br> <span class="text-danger">Check Link: </span> 
-							            <a href="https://kamayan-sa-palaisdaan-ph.herokuapp.com/" target="_blank">https://kamayan-sa-palaisdaan-ph.herokuapp.com</a></p>
-							            <br><br>
-							          </div>
-							        </div>
-							    </div><hr>
-							</div>
-
-							<!-- FITNESS MARKET APP -->
-							<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#fitnessModal">
-							    	<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-							    		<img src="/assets/images/fitness-market.jpg" class="img img-fluid more main-image" >
-							    	</div>
-							        <div class="media card-block">
-							          <img src="/assets/images/fitness-market.jpg" class="img img-fluid m-2 mt-md-4 more main-image d-none d-md-block d-lg-block">
-							          <div class="media-body text-left pl-3 pt-lg-1">
-							            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Fitness Market App</h5><br>
-							            <p class="card-title">A fitness market web application created using Node JS, Express, MongoDB, Embedded JavaScript (EJS), Bootstrap 4, Wordpress API, Session Based authentication using passport, and JQuery. Fitness market app offer services such as promoting fitness center and fitness professional or trainer including classes booking and fitness centers membership.
-							            <br><br> <span class="text-danger">Check Link: </span> 
-							            <a href="https://entrenami.herokuapp.com" target="_blank">https://entrenami.herokuapp.com</a></p>
-							            <br><br>
-							          </div>
-							        </div>
-							    </div><hr>
-							</div>
-
-							<!-- DENTISTRY WEBSITE -->
-							<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#dentistryModal">
-							    	<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-							    		<img src="/assets/images/dentistry.jpg" class="img img-fluid more main-image" >
-							    	</div>
-							        <div class="media card-block">
-							          <img src="/assets/images/dentistry.jpg" class="img img-fluid m-2 mt-md-4 more main-image d-none d-md-block d-lg-block">
-							          <div class="media-body text-left pl-3 pt-lg-2">
-							            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Dentistry Web App with Booking Calendar</h5><br>
-							            <p class="card-title">A sample dentistry website app with booking calendar using FullCalendar api, Jquery, Node JS, MongoDB, Bootstrap 4 and Embedded JavaScript (EJS). This dentistry website app is a sample booking app using full calendar (authentication hasn't been implemented yet for testing).
-							            <br><br> <span class="text-danger">Check Link: </span> 
-							            <a href="https://dentistry-app.herokuapp.com" target="_blank">https://dentistry-app.herokuapp.com</a></p>
-							            <br><br>
-							          </div>
-							        </div>
-							    </div><hr>
-							</div>
-
-							<!-- PHOTOGRAPHY WEBSITE -->
-							<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#photographyModal">
-							    	<div class="d-none d-sm-block d-block d-md-none pl-0 d-lg-none">
-							    		<img src="/assets/images/photography2.jpg" class="img img-fluid more main-image" >
-							    	</div>
-							        <div class="media card-block">
-							          <img src="/assets/images/photography2.jpg" class="img img-fluid m-2 mt-md-4 more main-image d-none d-md-block d-lg-block">
-							          <div class="media-body text-left pl-3 pt-lg-4">
-							            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Photography Website</h5><br>
-							            <p class="card-title">A sample photography blog website created using Node JS, Embedded JavaScript (EJS), Bootstrap 4 and JQuery. This photography website showcases the skill and portfolio of the photographer.
-							            <br><br> <span class="text-danger">Check Link: </span> 
-							            <a href="https://zaspix.herokuapp.com" target="_blank">https://zaspix.herokuapp.com</a></p>
-							            <br><br>
-							          </div>
-							        </div>
-							    </div><hr>
-							</div>
-
-
-							<!-- WEATHER APP WEBSITE -->
-							<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" data-target="#weatzeneModal">
-							    	<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-							    		<img src="/assets/images/weatzene.jpg" class="img img-fluid more main-image" >
-							    	</div>
-							        <div class="media card-block">
-							          <img src="/assets/images/weatzene.jpg" class="img img-fluid m-2 mt-md-4 more main-image d-none d-md-block d-lg-block">
-							          <div class="media-body text-left pl-3 pt-lg-4">
-							            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Weather and Timezone App</h5><br>
-							            <p class="card-title">A Weather and Timezone application where you can check the current weather (OpenweathermapAPI) and timezone(timezoneapi.io) based on country and city. It also uses Google map API for geolocation. It was created using Angular 6 and typescript.
-							            <br><br> <span class="text-danger">Check Link: </span> 
-							            <a href="https://weather-ng.herokuapp.com" target="_blank">https://weather-ng.herokuapp.com</a></p>
-							            <br><br>
-							          </div>
-							        </div>
-							    </div><hr>
-							</div>
-
-							<!-- COMPANY WEBSITE -->
-							<div class="col-md-12 text-center"  [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}">
-							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);">
-							    	<div class="d-none d-sm-block d-block d-md-none d-lg-none">
-							    		<img src="/assets/images/company.jpg" class="img img-fluid more main-image" >
-							    	</div>
-							        <div class="media card-block">
-							          <img src="/assets/images/company.jpg" class="img img-fluid m-2 mt-md-4 more main-image d-none d-md-block d-lg-block">
-							          <div class="media-body text-left pl-3 pt-lg-4">
-							            <h5 class="card-title text-danger more" style="margin-top: 20px; margin-bottom: 0;">Company Website</h5><br>
-							            <p class="card-title">A sample professional company website created using Node JS, Embedded JavaScript (EJS), Bootstrap 4 and JQuery. <br><br> <span class="text-danger">Check Link: </span> 
-							            <a href="https://company-web-solutions.herokuapp.com" target="_blank">https://company-web-solutions.herokuapp.com</a></p>
+							            <a href="{{item.link}}" target="_blank">{{item.link}}</a></p>
 							            <br><br>
 							          </div>
 							        </div>

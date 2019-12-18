@@ -28,6 +28,9 @@ import { DentistryModalComponent } from '../portfolio/modal/dentistry-modal/dent
 import { RestaurantModalComponent } from '../portfolio/modal/restaurant-modal/restaurant-modal.component';
 import { WeatzeneModalComponent } from '../portfolio/modal/weatzene-modal/weatzene-modal.component';
 
+import { PortfolioService } from '../shared/services/portfolio/portfolio.service';
+
+const services = [PortfolioService];
 
 const homeRoute: Routes = [
   	{ path: '', component: HomeComponent },
@@ -49,6 +52,7 @@ const homeRoute: Routes = [
     ParticlesModule,
   	RouterModule.forRoot(homeRoute)
   ],
+  providers: [...services],
   exports: [RouterModule],
   declarations: [
     AboutComponent,
