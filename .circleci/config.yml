@@ -56,13 +56,10 @@ jobs:
 
     steps:
       - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - "87:cc:bc:35:b1:ed:e0:5e:6a:ed:94:03:db:6b:7d:50"
       - run:
-          name: launch container
+          name: Deploy to amazon
           command: |
-            ssh -o "StrictHostKeyChecking=no"  ubuntu@$AMAZON_HOST 'sh automate.sh'
+            ssh -i '$AWS_KEY_PPK' ubuntu@$AMAZON_HOST 'sh automate.sh'
 
 workflows:
   version: 2
