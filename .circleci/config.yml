@@ -47,28 +47,13 @@ jobs:
           name: Deploy Master to Heroku
           command: |
               git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
-  
-  # deploy_amazon
-  deploy_amazon:
-    docker:
-      - image: circleci/node:6.10.2
-    working_directory: ~/Sherwin-Dapito-Resume-Angular-5
-
-    steps:
-      - checkout
-      - run:
-          name: Deploy to amazon
-          command: |
-            ssh -i '$AWS_KEY_PPK' ubuntu@$AMAZON_HOST 
-            'y'
-            'sh automate.sh'
 
 workflows:
   version: 2
-  build_and_deploy_heroku_and_deploy_amazon:
+  build_and_deploy_heroku:
     jobs:
       - build
-      - deploy_amazon:
+      - deploy_heroku:
           requires:
             - build
 #          filters:
