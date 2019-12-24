@@ -17,7 +17,7 @@
 							<div class="col-md-12 text-center py-20" [@animate]="{value:'*', params:{ scale:'0.7', delay:'400ms' }}" *ngFor="let item of portfolioItems">
 							    <div class="card-hover-shadow" style="background-color: rgba(255, 255,255, 0);" data-toggle="modal" attr.data-target="{{'#' + item.modal}}">
 							    	<div class="d-none d-sm-block d-block d-md-none pl-0 d-lg-none">
-							    		<img src="{{item.image}}" >
+							    		<img src="{{item.image}}" class="img img-fluid more mobile-image">
 							    	</div>
 							        <div class="media card-block">
 							          <img src="{{item.image}}" class="img img-fluid m-2 mt-md-4  d-none d-md-block d-lg-block main-image" >

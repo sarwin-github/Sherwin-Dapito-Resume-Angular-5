@@ -24,6 +24,13 @@
     border: 2px solid #e2e2e2;
 }
 
+.mobile-image{
+    width:  100%;
+    height: 200px;
+    object-fit: cover !important;
+    border: 2px solid #e2e2e2;
+}
+
 .modal {
     display: none; /* Hidden by default */
     overflow-y: scroll !important;
