@@ -9,6 +9,7 @@ import { SharedModule } from './shared/shared.module';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ChartModule } from 'primeng/chart';
 import { MainModule } from './shared/main.module';
+import { SeoService } from './shared/services/seo/seo.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,11 @@ import { MainModule } from './shared/main.module';
     MainModule,
     SharedModule
   ],
-  providers: [],
+  providers: [SeoService, { provide: 'WINDOW', useFactory: getWindow }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function getWindow() {
+  return (typeof window !== 'undefined') ? window : null;
+}
