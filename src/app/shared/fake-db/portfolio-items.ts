@@ -25,7 +25,7 @@ export class PortfolioDB{
 		{
 			image: "/assets/images/minerva_1.jpg",
 			title: "Minerva Platform IO",
-			description: `Implemented Frontend design based on a wireframe given. It is a frontend of a data mining app <a href="https://mnrva.io" target="_blank">(https://mnrva.io)</a>. The app was created using Angular 6, TypeScript, and RxJS.`,
+			description: `Implemented Frontend design based on a wireframe given. It is a frontend MVP of a data mining app <a href="https://mnrva.io" target="_blank">(https://mnrva.io)</a>. The app was created using Angular 6, TypeScript, and RxJS.`,
 			link: "http://minerva-platform.herokuapp.com",
 			modal: "minervaModal"
 		},
