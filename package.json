@@ -23,7 +23,7 @@
     "@angular/router": "^5.2.0",
     "angular-particle": "^1.0.4",
     "bootstrap": "^4.4.1",
-    "chart.js": "^2.7.2",
+    "chart.js": "^2.9.4",
     "core-js": "^2.5.7",
     "express": "^4.16.3",
     "font-awesome": "^4.7.0",
