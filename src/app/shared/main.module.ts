@@ -27,6 +27,7 @@ import { FitnessModalComponent } from '../portfolio/modal/fitness-modal/fitness-
 import { DentistryModalComponent } from '../portfolio/modal/dentistry-modal/dentistry-modal.component';
 import { RestaurantModalComponent } from '../portfolio/modal/restaurant-modal/restaurant-modal.component';
 import { WeatzeneModalComponent } from '../portfolio/modal/weatzene-modal/weatzene-modal.component';
+import { MoskenesModalComponent } from '../portfolio/modal/moskenes-modal/moskenes-modal.component';
 
 import { PortfolioService } from '../shared/services/portfolio/portfolio.service';
 
@@ -63,6 +64,7 @@ const homeRoute: Routes = [
     HomePortfolio,
     HomeSkills,
     PortfolioComponent,
+    MoskenesModalComponent,
     TravelModalComponent,
     MinervaAppModalComponent,
     BrandToolModalComponent,

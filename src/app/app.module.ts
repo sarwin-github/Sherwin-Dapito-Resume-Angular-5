@@ -15,7 +15,7 @@ import { SeoService } from './shared/services/seo/seo.service';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
