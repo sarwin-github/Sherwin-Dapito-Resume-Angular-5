@@ -51,7 +51,12 @@
     bottom: 0; /* Full height top and bottom 0 */
     overflow: auto; /* Enable scroll if needed */
     z-index: 9999999; /* Sit on top - higher than any other z-index in your site*/
+    letter-spacing: 1px;
+    line-height: 2.0;
+    font-size: 14px;
 }
+
+
 
 .modal-gallery-content, #caption { 
     animation-name: fadein;

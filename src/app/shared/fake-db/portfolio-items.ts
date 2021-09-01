@@ -12,7 +12,7 @@ export class PortfolioDB{
 			image: "/assets/images/moskenes-1.jpg",
 			title: "Moskenes.io",
 			description: "An Asset Management Web Application that allows users or companies to create Scenario Planning (Top-down and Bottom-up Planning) for retail subcategories and Retail store. It was created using Angular 8.",
-			link: "http://gmail.moskenes.io/company/dashboard/overview",
+			link: "http://gmail.moskenes.io",
 			modal: "moskenesModal"
 		},
 
@@ -20,7 +20,7 @@ export class PortfolioDB{
 			image: "/assets/images/travel-1.jpg",
 			title: "Ease Travel Service",
 			description: "A one-stop shop for travel in Africa, to bring together in a single application the best service providers in the field of travel, tourism and leisure: Air and land transport, Accommodation, Tourist and cultural activities, Insurance travel, Tourist and Economic Guide. Created using angular.",
-			link: "https://ease-ts.com",
+			link: "https://ets-main.herokuapp.com",
 			modal: "travelModal"
 		},
 		{

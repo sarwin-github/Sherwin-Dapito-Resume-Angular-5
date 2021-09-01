@@ -1,12 +1,16 @@
 .nav-link{
 	color: whitesmoke !important;
-	font-size: 11px !important;
+	font-size: 11px;
 	text-transform: uppercase !important;
 	font-weight: 600 !important;
 	letter-spacing: 2px !important;
 
-   
+    .social{
+        font-size: 13px !important;
+    }
 }
+
+
 
 /* Underline From Left */
 .hvr-underline-from-left {
