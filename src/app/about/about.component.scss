@@ -58,6 +58,13 @@
         border-bottom-right-radius:20%;
         animation: bounce 2s infinite alternate;
         -webkit-animation: bounce 2s infinite alternate;
+
+        @media (max-width: 1111px){
+            border-bottom-left-radius:0%;
+            border-bottom-right-radius:0%;
+            animation: none;
+            -webkit-animation: none;
+        }
     } 
 }
 

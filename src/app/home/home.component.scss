@@ -58,6 +58,14 @@
         background: rgba(54,56,66,0.8);
         border-bottom-left-radius:20%;
         border-bottom-right-radius:60%;
+
+        @media (max-width: 1111px){
+            border-bottom-left-radius:0%;
+            border-bottom-right-radius:0%;
+            animation: none;
+            -webkit-animation: none;
+        }
+
         animation: bounce 2s infinite alternate;
         -webkit-animation: bounce 2s infinite alternate;
     } 
