@@ -10,12 +10,43 @@
     }
 }
 
+@keyframes bounce {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
 .bg-img {
     background: url(/assets/images/dev-2.jpg)no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    border-bottom-left-radius:5%;
+    border-bottom-right-radius:20%;
+
+    /* &:before {
+        content: "";
+        position: absolute;
+        left: 0; 
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        background: rgba(77,82,110,0.3);
+        border-bottom-left-radius:30%;
+        border-bottom-right-radius:80%;
+    } */
 
     &:before {
         content: "";
@@ -24,8 +55,12 @@
         right: 0;
         top: 0; 
         bottom: 0;
-        background: rgba(0,0,0,0.7);
-    }
+        background: rgba(54,56,66,0.8);
+        border-bottom-left-radius:20%;
+        border-bottom-right-radius:60%;
+        animation: bounce 2s infinite alternate;
+        -webkit-animation: bounce 2s infinite alternate;
+    } 
 }
 
 .btn-dark, .btn-danger{
