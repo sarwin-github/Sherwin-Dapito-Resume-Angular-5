@@ -1,5 +1,9 @@
 # Sherwin Dapito resume created using Angular 5
 
+<img src="https://res.cloudinary.com/branding-tool/image/upload/v1630630955/2021-09-02_14-10-34.jpg">
+
+Demo App - <a href="https://sherwin-dapito.herokuapp.com" target="_blank">Sherwin Dapito Resume</a>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server
