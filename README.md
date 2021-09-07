@@ -1,6 +1,6 @@
 # Sherwin Dapito resume created using Angular 5
 
-<img src="https://res.cloudinary.com/branding-tool/image/upload/v1630630955/2021-09-02_14-10-34.jpg">
+<img src="https://res.cloudinary.com/branding-tool/image/upload/v1630996637/2021-09-07_14-36-32.jpg">
 
 Demo App - <a href="https://sherwin-dapito.herokuapp.com" target="_blank">Sherwin Dapito Resume</a>
 
