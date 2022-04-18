@@ -83,7 +83,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/trial",
+            "outputPath": "dist/sarwin-resume-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -94,13 +94,17 @@
               "src/assets"
             ],
             "styles": [
-              "../node_modules/hover.css/scss/hover.scss",
-              "./assets/css/bootstrap.min.css",
-              "../node_modules/font-awesome/css/font-awesome.min.css",
-              "../node_modules/primeng/resources/themes/omega/theme.css",
-              "styles.scss"
+              "node_modules/hover.css/scss/hover.scss",
+              "./src/assets/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/primeng/resources/themes/omega/theme.css",
+              "./src/styles.scss"
             ],
             "scripts": [
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -140,10 +144,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "trial:build:production"
+              "browserTarget": "sarwin-resume-angular:build:production"
             },
             "development": {
-              "browserTarget": "trial:build:development"
+              "browserTarget": "sarwin-resume-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -151,7 +155,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "trial:build"
+            "browserTarget": "sarwin-resume-angular:build"
           }
         },
         "test": {
