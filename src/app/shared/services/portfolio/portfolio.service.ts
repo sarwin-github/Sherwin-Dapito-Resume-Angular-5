@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { PortfolioDB } from '../../fake-db/portfolio-items';
 import { Observable } from 'rxjs';
 import { delay } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 
 @Injectable()
 export class PortfolioService {

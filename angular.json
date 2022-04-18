@@ -97,11 +97,9 @@
               "node_modules/hover.css/scss/hover.scss",
               "./src/assets/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
-              "node_modules/primeng/resources/themes/omega/theme.css",
               "./src/styles.scss"
             ],
             "scripts": [
-              "node_modules/chart.js/dist/Chart.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { fadeIn } from '../animations/fade-in';
 import { mainAnimations } from '../animations/all-animation';
 import { PortfolioService } from '../shared/services/portfolio/portfolio.service';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 @Component({
 	selector: 'app-portfolio',
