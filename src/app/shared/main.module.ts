@@ -30,6 +30,7 @@ import { WeatzeneModalComponent } from '../portfolio/modal/weatzene-modal/weatze
 import { MoskenesModalComponent } from '../portfolio/modal/moskenes-modal/moskenes-modal.component';
 
 import { PortfolioService } from '../shared/services/portfolio/portfolio.service';
+import { NgParticlesModule } from 'ng-particles';
 
 const services = [PortfolioService];
 
@@ -50,7 +51,8 @@ const homeRoute: Routes = [
     FormsModule, 
     ReactiveFormsModule,
     CommonModule,
-    ParticlesModule,
+    // ParticlesModule,
+    NgParticlesModule,
   	RouterModule.forRoot(homeRoute)
   ],
   providers: [...services],
